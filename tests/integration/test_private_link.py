@@ -30,6 +30,7 @@ def test_the_link_opens_and_removes_the_token_from_the_address(client):
     cookie = response.headers["set-cookie"]
     assert "HttpOnly" in cookie and "Secure" in cookie and TOKEN not in cookie
     assert client.get("/").status_code == 200
+    assert client.get(f"/?k={TOKEN}").status_code == 303  # opening the link again also clears the address bar
 
 
 def test_a_forged_cookie_does_not_open(client):

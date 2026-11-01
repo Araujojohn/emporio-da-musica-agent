@@ -56,13 +56,13 @@ async def private_link(request: Request, call_next):
     """Only people who received the link get in. It sets a cookie and leaves the address bar, so the token is not left there."""
     if not config.ACCESS_TOKEN or request.url.path == "/health":
         return await call_next(request)
-    if hmac.compare_digest(request.cookies.get(ACCESS_COOKIE, ""), _access_pass()):
-        return await call_next(request)
     if hmac.compare_digest(request.query_params.get("k", ""), config.ACCESS_TOKEN):
         response = RedirectResponse("/", status_code=303)
         response.set_cookie(ACCESS_COOKIE, _access_pass(), max_age=ACCESS_DAYS * 86400, httponly=True, secure=True,
                             samesite="lax")
         return response
+    if hmac.compare_digest(request.cookies.get(ACCESS_COOKIE, ""), _access_pass()):
+        return await call_next(request)
     return HTMLResponse(PRIVATE_PAGE, status_code=403)
 
 
