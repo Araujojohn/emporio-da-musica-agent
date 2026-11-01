@@ -10,7 +10,7 @@
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 html{background:var(--bg);height:100%}
-body{margin:0;height:100%;background:var(--bg-gradient);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55;overflow:hidden}
+body{margin:0;height:100%;background:var(--bg-gradient);color:var(--ink);font-family:var(--sans);font-size:14.5px;line-height:1.55;overflow:hidden}
 button,textarea{font:inherit;color:inherit}
 *{scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.14) transparent}
 ::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-track{background:transparent}

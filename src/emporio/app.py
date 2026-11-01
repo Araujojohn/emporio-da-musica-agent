@@ -1,4 +1,6 @@
 """HTTP API and static UI. One process: the graph, rate limit and budget all live here."""
+import hashlib
+import hmac
 import json
 import os
 import re
@@ -8,7 +10,7 @@ from pathlib import Path
 from typing import Iterator, Literal
 
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import FileResponse, StreamingResponse
+from fastapi.responses import FileResponse, HTMLResponse, RedirectResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
@@ -17,6 +19,12 @@ from .graph import persistent_graph, stream_turn
 
 WEB = config.ROOT / "web"
 REPORT = config.ROOT / "reports" / "evals.json"
+ACCESS_COOKIE = "emporio_access"
+ACCESS_DAYS = 30
+PRIVATE_PAGE = ('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width">'
+                "<title>Private demo</title><body style=\"margin:0;display:grid;place-items:center;height:100vh;"
+                'background:#0e1014;color:#cdc9c1;font-family:system-ui,sans-serif;text-align:center">'
+                "<p>This demo opens only through its private link.<br>Esta demonstração só abre pelo link privado.</p></body></html>")
 SESSION_ID = re.compile(r"^[a-zA-Z0-9-]{8,64}$")
 BUSY_MESSAGE = {
     "pt": "Estou com muitas conversas agora. Tente de novo em alguns minutos ou fale com a loja pelo (67) 3341-4444.",
@@ -36,6 +44,26 @@ class ChatRequest(BaseModel):
     session_id: str
     message: str
     language: Literal["pt", "en"] = "pt"
+
+
+def _access_pass() -> str:
+    """The cookie holds a hash, so the browser never keeps the link's token itself."""
+    return hashlib.sha256(config.ACCESS_TOKEN.encode()).hexdigest()
+
+
+@app.middleware("http")
+async def private_link(request: Request, call_next):
+    """Only people who received the link get in. It sets a cookie and leaves the address bar, so the token is not left there."""
+    if not config.ACCESS_TOKEN or request.url.path == "/health":
+        return await call_next(request)
+    if hmac.compare_digest(request.cookies.get(ACCESS_COOKIE, ""), _access_pass()):
+        return await call_next(request)
+    if hmac.compare_digest(request.query_params.get("k", ""), config.ACCESS_TOKEN):
+        response = RedirectResponse("/", status_code=303)
+        response.set_cookie(ACCESS_COOKIE, _access_pass(), max_age=ACCESS_DAYS * 86400, httponly=True, secure=True,
+                            samesite="lax")
+        return response
+    return HTMLResponse(PRIVATE_PAGE, status_code=403)
 
 
 def _client_ip(request: Request) -> str:

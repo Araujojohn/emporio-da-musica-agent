@@ -2,7 +2,7 @@
 
 A text agent for a fictional musical instrument store in Campo Grande, Brazil. It answers about products, orders, returns and store policies, and it shows its work: the interface displays every lookup, every check and the cost of each reply.
 
-**Live demo:** https://emporio-da-musica.artace.app (Portuguese by default, with a button that switches everything to English; the side panel shows the behind-the-scenes view and can be resized or hidden)
+**Live demo:** private link, sent with the submission. It opens in Portuguese, with a button that switches everything to English; the side panel shows the behind-the-scenes view and can be resized or hidden.
 
 | Measured on 2026-11-01 | Result |
 |---|---|
@@ -90,7 +90,7 @@ An order opens only with the phone or e-mail on that order, checked in code befo
 
 ### Public demo limits
 
-The URL is public and each reply costs money, so limits live in code: 20 messages per visitor every 10 minutes, a daily budget of US$ 1, 800 characters per message and 700 output tokens per reply.
+Each reply costs money and the data is a demo of customer records, so it opens only through a private link, and limits live in code: 20 messages per visitor every 10 minutes, a daily budget of US$ 1, 800 characters per message and 700 output tokens per reply.
 
 ## Evaluation
 

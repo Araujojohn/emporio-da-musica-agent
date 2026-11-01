@@ -93,6 +93,7 @@ const TOOL_KEYS = { search_products: "catalog", get_order: "orders", check_retur
 const $ = (id) => document.getElementById(id);
 const messages = $("mensagens"), scroller = $("rolagem"), input = $("texto"), trace = $("trace");
 const MIN_PANEL = 280;
+const MAX_PANEL = 800;
 const DEFAULT_PANEL = 360;
 const WIDE_SCREEN = 1280;
 let language = remembered("emporio-language") === "en" ? "en" : "pt";
@@ -349,7 +350,7 @@ function applyLanguage() {
 }
 
 function panelWidthLimit() {
-  return Math.max(MIN_PANEL, innerWidth - 420);
+  return Math.min(MAX_PANEL, Math.max(MIN_PANEL, innerWidth - 420));
 }
 
 function setPanelWidth(width) {

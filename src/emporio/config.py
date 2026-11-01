@@ -24,6 +24,9 @@ PRICE_INPUT_CACHED = 0.006
 PRICE_INPUT_MISS = 0.30
 PRICE_OUTPUT = 1.20
 
+# With a token set, the site opens only through its private link. Empty (the default) keeps a local run open.
+ACCESS_TOKEN = os.environ.get("ACCESS_TOKEN", "")
+
 DAILY_BUDGET_USD = float(os.environ.get("DAILY_BUDGET_USD", "1.0"))
 RATE_LIMIT_MESSAGES = int(os.environ.get("RATE_LIMIT_MESSAGES", "20"))
 RATE_LIMIT_WINDOW_SECONDS = 600
