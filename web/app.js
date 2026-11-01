@@ -94,6 +94,7 @@ const $ = (id) => document.getElementById(id);
 const messages = $("mensagens"), scroller = $("rolagem"), input = $("texto"), trace = $("trace");
 const MIN_PANEL = 280;
 const DEFAULT_PANEL = 360;
+const WIDE_SCREEN = 1280;
 let language = remembered("emporio-language") === "en" ? "en" : "pt";
 let session = storedSession();
 let busy = false;
@@ -425,6 +426,7 @@ $("idioma").addEventListener("click", () => {
   applyLanguage();
 });
 
+if (innerWidth < WIDE_SCREEN) $("app").classList.add("sem-painel");  // small screens open on the conversation
 applyLanguage();
 enablePanelResize();
 drawStars();

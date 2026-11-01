@@ -30,7 +30,8 @@ button,textarea{font:inherit;color:inherit}
 @keyframes fx{0%{opacity:.6;transform:translateX(-3vw)}50%{opacity:1;transform:translateX(0)}100%{opacity:.7;transform:translateX(2vw)}}
 
 /* Estrutura */
-.app{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) var(--painel,360px);height:100dvh}
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+.app{position:relative;z-index:1;display:grid;width:100%;max-width:100vw;overflow:hidden;grid-template-columns:minmax(0,1fr) min(var(--painel,360px),calc(100vw - 420px));height:100dvh}
 .app.sem-painel{grid-template-columns:minmax(0,1fr)}
 .app.sem-painel .bastidores{display:none}
 .puxador{position:absolute;top:0;bottom:0;left:-5px;width:10px;z-index:2;cursor:col-resize;touch-action:none}
