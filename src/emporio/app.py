@@ -32,8 +32,9 @@ class ChatRequest(BaseModel):
 
 
 def _client_ip(request: Request) -> str:
+    """The proxy appends the real address last. Earlier entries come from the client and can be forged."""
     forwarded = request.headers.get("x-forwarded-for", "")
-    return forwarded.split(",")[0].strip() or (request.client.host if request.client else "unknown")
+    return forwarded.split(",")[-1].strip() or (request.client.host if request.client else "unknown")
 
 
 def _over_rate_limit(ip: str) -> bool:

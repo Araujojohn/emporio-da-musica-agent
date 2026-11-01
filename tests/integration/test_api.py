@@ -56,6 +56,15 @@ def test_rate_limit_answers_politely_without_calling_the_model(client, monkeypat
     assert events(post(client))[-1]["text"] == web.BUSY_MESSAGE
 
 
+def test_forged_forwarded_header_does_not_escape_the_rate_limit(client, monkeypatch):
+    for i in range(config.RATE_LIMIT_MESSAGES):
+        client.post("/api/chat", json={"session_id": "session-1234", "message": "oi"},
+                    headers={"X-Forwarded-For": f"10.0.0.{i}, 203.0.113.9"})
+    response = client.post("/api/chat", json={"session_id": "session-1234", "message": "oi"},
+                           headers={"X-Forwarded-For": "10.9.9.9, 203.0.113.9"})
+    assert events(response)[-1]["text"] == web.BUSY_MESSAGE
+
+
 def test_daily_budget_stops_the_model(client, monkeypatch):
     monkeypatch.setattr(db, "spent_today", lambda: config.DAILY_BUDGET_USD)
     monkeypatch.setattr(llm, "complete", lambda *_: pytest.fail("model must not be called"))
