@@ -5,3 +5,4 @@ __pycache__/
 .env
 var/
 tests/evals/.spend.json
+tests/.portao.json

@@ -69,7 +69,7 @@ def complete(messages: list[dict], tools: list[dict] | None) -> dict:
     if tools:
         body["tools"] = tools
     if "deepseek" in config.LLM_BASE_URL:
-        body["thinking"] = {"type": "disabled"}  # measured: same accuracy, slower and pricier with it on
+        body["thinking"] = {"type": "disabled"}  # on by default; it is billed as output and adds latency
 
     if config.LLM_MODE == "live":
         return _post(body)
