@@ -74,6 +74,7 @@ body.arrastando{cursor:col-resize;user-select:none}
 @keyframes sobe{from{opacity:0;transform:translateY(6px)}}
 .msg.cliente{justify-content:flex-end}
 .avatar{flex:none;width:28px;height:28px;border-radius:7px;border:1px solid var(--ouro-borda);display:grid;place-items:center;font-family:var(--serif);font-size:13px;color:var(--ouro-claro);background:#17191f}
+.avatar svg{width:15px;height:15px;stroke:var(--ouro-claro);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .bolha{padding:10px 14px;border-radius:6px;max-width:min(640px,88%);overflow-wrap:anywhere}
 .cliente .bolha{background:var(--ouro);color:#14171c}
 .teo .bolha{background:var(--sup-leve);border:1px solid var(--linha);color:var(--ink2)}

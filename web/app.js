@@ -9,6 +9,8 @@ const ICONS = {
   escalate_to_human: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/>',
   guard: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>',
 };
+const AVATAR = `<span class="avatar"><svg viewBox="0 0 24 24" aria-hidden="true">${ICONS.search_products}</svg></span>`;
+
 const TEXT = {
   en: {
     other: "Português", tagline: "Your music starts here", panel: "Behind the scenes", newChat: "New chat",
@@ -167,7 +169,7 @@ function render(text) {
 function addMessage(role, text) {
   const row = document.createElement("div");
   row.className = `msg ${role}`;
-  const avatar = role === "teo" ? '<span class="avatar">T</span>' : "";
+  const avatar = role === "teo" ? AVATAR : "";
   row.innerHTML = `${avatar}<div class="bolha">${render(text)}</div>`;
   messages.append(row);
   scroller.scrollTop = scroller.scrollHeight;
@@ -177,7 +179,7 @@ function addMessage(role, text) {
 function addWorking() {
   const row = document.createElement("div");
   row.className = "msg teo";
-  row.innerHTML = `<span class="avatar">T</span><div class="trabalhando"><em>${t("reading")}</em></div>`;
+  row.innerHTML = `${AVATAR}<div class="trabalhando"><em>${t("reading")}</em></div>`;
   messages.append(row);
   scroller.scrollTop = scroller.scrollHeight;
   return row;
