@@ -1,6 +1,6 @@
 """Every setting in one place, read from the environment."""
 import os
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -32,3 +32,9 @@ STORE_TZ = ZoneInfo("America/Campo_Grande")
 # The dataset is a snapshot: its latest order is 2026-03-22. Order age is measured against this date, while
 # opening hours use the real clock. See "Assumptions" in the README.
 DATA_AS_OF = date.fromisoformat(os.environ.get("DATA_AS_OF", "2026-03-25"))
+
+
+def now() -> datetime:
+    """Store time. FIXED_NOW freezes it in tests: a clock in the prompt would make every recording useless."""
+    fixed = os.environ.get("FIXED_NOW")
+    return datetime.fromisoformat(fixed).replace(tzinfo=STORE_TZ) if fixed else datetime.now(STORE_TZ)

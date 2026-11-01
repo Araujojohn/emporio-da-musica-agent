@@ -135,7 +135,7 @@ class Store:
         return [pid for pid, score in hits.items() if score == best] if best else []
 
     def search(self, query: str = "", category: str = "", min_price: float | None = None,
-               max_price: float | None = None, limit: int = 8) -> dict:
+               max_price: float | None = None, limit: int = 12) -> dict:
         """Naming a product shows it whatever its status. Browsing shows only what can be bought today."""
         found = [self.products[pid] for pid in self._matches(query)]
         if category:

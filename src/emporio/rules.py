@@ -4,14 +4,31 @@ Anything with a number or a deadline lives here, never in the prompt: the model 
 answers. Each function cites the manual section it implements.
 """
 from dataclasses import dataclass
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 
+OPENING_HOURS = {0: (9, 18), 1: (9, 18), 2: (9, 18), 3: (9, 18), 4: (9, 18), 5: (9, 13)}  # §2: Monday=0, closed Sunday
+WEEKDAYS = ("segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado", "domingo")
 PIX_DISCOUNT_PERCENT = 5
 INSTALLMENT_TIERS = ((3, 50.0), (6, 80.0), (12, 100.0))  # §3.1: (up to N installments, minimum installment)
 REGRET_DAYS = 7  # §4.1
 DEFECT_EXCHANGE_DAYS = 30  # §4.2
 PREFERENCE_DAYS = 7  # §4.3
 LEGAL_WARRANTY_DAYS = 90  # §8.1
+
+
+def store_status(moment: datetime) -> str:
+    """§7.1 asks the assistant to state the return time outside business hours. Holidays are not in the data."""
+    hours = OPENING_HOURS.get(moment.weekday())
+    today = f"Agora é {WEEKDAYS[moment.weekday()]}, {moment:%d/%m/%Y}, {moment:%H:%M} em Campo Grande."
+    if hours and hours[0] <= moment.hour < hours[1]:
+        return f"{today} A loja está aberta até as {hours[1]}h."
+    for ahead in range(0, 8):
+        day = moment + timedelta(days=ahead)
+        day_hours = OPENING_HOURS.get(day.weekday())
+        if day_hours and (ahead > 0 or moment.hour < day_hours[0]):
+            label = "hoje" if ahead == 0 else "amanhã" if ahead == 1 else WEEKDAYS[day.weekday()]
+            return f"{today} A loja está fechada e reabre {label} às {day_hours[0]}h."
+    raise ValueError("opening hours are empty")
 
 
 def promo_price(price: float, discount_percent: float) -> float:
@@ -103,6 +120,7 @@ def return_decision(r: ReturnRequest) -> dict:
 
 
 def _decision(decision: str, section: str, explanation: str, facts: dict | None = None) -> dict:
-    return {"decision": decision, "policy_section": section, "explanation": explanation,
-            "must_confirm_with_customer": "Not customized, not a 'final sale' item, not a wind instrument mouthpiece (§4.4).",
-            **(facts or {})}
+    result = {"decision": decision, "policy_section": section, "explanation": explanation, **(facts or {})}
+    if decision == "allowed":
+        result["must_confirm_with_customer"] = "Not customized, not a 'final sale' item, not a mouthpiece (§4.4)."
+    return result
