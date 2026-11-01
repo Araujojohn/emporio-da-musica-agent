@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Thiago, pelo que consta aqui a entrega foi em **15/11/2025** e o prazo de arrependimento (7 dias) terminou em **22/11/2025** — já passou bem do prazo, então a devolução por arrependimento não é possível.\n\nSó uma coisa: essa data de recebimento é uma estimativa nossa. Você recebeu nessa data mesmo? Se foi diferente, me fala que eu reavalio. E se for outra questão, tipo defeito, também me conta que eu verifico."
+ },
+ "usage": {
+  "prompt_tokens": 2118,
+  "completion_tokens": 125,
+  "total_tokens": 2243,
+  "prompt_tokens_details": {
+   "cached_tokens": 1920
+  },
+  "prompt_cache_hit_tokens": 1920,
+  "prompt_cache_miss_tokens": 198
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1683
+}

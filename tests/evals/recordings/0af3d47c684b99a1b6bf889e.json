@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Thiago, pelo que consta aqui a devolução por arrependimento não é possível: o prazo de 7 dias a partir do recebimento já passou (a entrega foi em 15/11/2025, então o limite seria 22/11/2025).\n\nSe o caso for outro — defeito, por exemplo — me conta que eu verifico as regras de garantia. Quer que eu veja isso?"
+ },
+ "usage": {
+  "prompt_tokens": 2139,
+  "completion_tokens": 96,
+  "total_tokens": 2235,
+  "prompt_tokens_details": {
+   "cached_tokens": 1920
+  },
+  "prompt_cache_hit_tokens": 1920,
+  "prompt_cache_miss_tokens": 219
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1494
+}

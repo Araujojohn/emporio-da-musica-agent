@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_Ge0KaALOkCwFoCft8CPK2940",
+    "type": "function",
+    "function": {
+     "name": "get_order",
+     "arguments": "{\"order_id\": 19, \"contact\": \"(67) 98432-1098\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1754,
+  "completion_tokens": 62,
+  "total_tokens": 1816,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 218
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1195
+}

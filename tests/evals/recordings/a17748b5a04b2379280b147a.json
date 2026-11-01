@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Prontinho, Letícia! Encaminhei para a equipe com o protocolo **EM-8626F7** — eles retornam em até 24 horas úteis. Se puder confirmar a data em que recebeu o ukulele, ajuda a agilizar. Precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2478,
+  "completion_tokens": 72,
+  "total_tokens": 2550,
+  "prompt_tokens_details": {
+   "cached_tokens": 2304
+  },
+  "prompt_cache_hit_tokens": 2304,
+  "prompt_cache_miss_tokens": 174
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1293
+}

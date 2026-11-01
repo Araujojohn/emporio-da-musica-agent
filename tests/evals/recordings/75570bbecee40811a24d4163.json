@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Temos 3 teclados sintetizadores disponíveis, todos com 61 teclas:\n\n- **Korg Synth 1 Pro** – R$ 1.127,00 (R$ 1.070,65 no PIX, 11x sem juros)\n- **Roland Synth 3 Pro** – R$ 9.351,00 (R$ 8.883,45 no PIX, 12x sem juros)\n- **Nord Synth 2 Pro** – R$ 19.567,00 (R$ 18.588,65 no PIX, 12x sem juros)\n\nQuer que eu detalhe algum deles ou te ajude a escolher pelo tipo de uso?"
+ },
+ "usage": {
+  "prompt_tokens": 2289,
+  "completion_tokens": 159,
+  "total_tokens": 2448,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 625
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1604
+}

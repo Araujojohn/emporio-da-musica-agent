@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Temos 2 unidades da **Gibson Les Paul Standard '50s** (Heritage Cherry Sunburst), por R$ 18.900 — no PIX sai R$ 17.955, ou em até 12x sem juros.\n\nQuer que eu te conte mais sobre ela ou precisa de outra coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 1964,
+  "completion_tokens": 67,
+  "total_tokens": 2031,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 300
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1514
+}

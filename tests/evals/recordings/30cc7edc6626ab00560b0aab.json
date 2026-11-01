@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Thiago, consultei aqui e a devolução está liberada! Você recebeu dia 20/03 e o prazo de arrependimento vai até **27/03** — ou seja, ainda dá tempo tranquilo.\n\nDetalhes:\n- Item: Taylor 110e Dreadnought Natural\n- Precisa estar sem uso, na embalagem original, com todos os acessórios e manuais\n- Reembolso pelo mesmo meio de pagamento (crédito em 6x) em até 10 dias úteis\n- O frete de retorno é por nossa conta\n\nSó me confirma uma coisa: o violão está sem uso, na embalagem original e não é item personalizado nem de liquidação final, certo? Confirmando isso, já sigo com o processo de coleta."
+ },
+ "usage": {
+  "prompt_tokens": 2262,
+  "completion_tokens": 182,
+  "total_tokens": 2444,
+  "prompt_tokens_details": {
+   "cached_tokens": 2048
+  },
+  "prompt_cache_hit_tokens": 2048,
+  "prompt_cache_miss_tokens": 214
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1954
+}

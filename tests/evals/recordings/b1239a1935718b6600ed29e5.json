@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Tem sim! No PIX é 5% de desconto sobre o preço de tabela, tanto na loja quanto online. Só uma observação: esse desconto não acumula com preços que já estão em promoção.\n\nQuer que eu calcule o valor de algum instrumento específico no PIX?"
+ },
+ "usage": {
+  "prompt_tokens": 2159,
+  "completion_tokens": 69,
+  "total_tokens": 2228,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 495
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1374
+}

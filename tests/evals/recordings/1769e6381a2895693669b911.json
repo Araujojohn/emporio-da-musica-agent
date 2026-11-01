@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Ana, achei seu pedido: é o ukulele Kala KA-C Concert Mogno, no valor de R$ 349,90, com entrega prevista para 28/02 — ou seja, está atrasado. O código de rastreio é BRJL5544332BR.\n\nComo é um caso de entrega atrasada, vou passar para a equipe acompanhar pra você.",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_7bEZmLZsgR7TGvJgoqtz2619",
+    "type": "function",
+    "function": {
+     "name": "escalate_to_human",
+     "arguments": "{\"reason\": \"late_delivery\", \"summary\": \"Pedido 8 (ukulele Kala KA-C Concert Mogno) enviado, com entrega prevista para 28/02/2026 e ainda não recebido. Rastreio BRJL5544332BR. Cliente pede posição sobre a entrega.\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1956,
+  "completion_tokens": 203,
+  "total_tokens": 2159,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 164
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 2025
+}

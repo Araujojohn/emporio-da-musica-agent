@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Não, queda não é coberta. A garantia vale para defeitos de fabricação — danos por mau uso, queda, umidade excessiva ou condições climáticas extremas ficam de fora, assim como desgaste natural (cordas, trastes, feltros) e reparos feitos por terceiros não autorizados.\n\nSe o instrumento caiu e está com problema, posso te ajudar a ver o que dá pra fazer. Quer me contar o que aconteceu?"
+ },
+ "usage": {
+  "prompt_tokens": 2135,
+  "completion_tokens": 104,
+  "total_tokens": 2239,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 343
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1570
+}

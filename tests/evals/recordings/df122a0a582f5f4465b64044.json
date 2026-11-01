@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Bom dia! Deixa eu conferir o prazo de entrega pra Dourados pra te passar certinho.",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_QMn6KocSoZbjJoYI7aGj0032",
+    "type": "function",
+    "function": {
+     "name": "search_policies",
+     "arguments": "{\"query\": \"prazo de entrega Sedex frete\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1745,
+  "completion_tokens": 69,
+  "total_tokens": 1814,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 209
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1126
+}

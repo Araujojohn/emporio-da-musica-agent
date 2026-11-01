@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa pergunta! Deixa eu checar o que a loja tem sobre promoções.",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_gNJbUgTHEHX0O68sN3ei5606",
+    "type": "function",
+    "function": {
+     "name": "search_policies",
+     "arguments": "{\"query\": \"promoções black friday\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1789,
+  "completion_tokens": 62,
+  "total_tokens": 1851,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 253
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1165
+}

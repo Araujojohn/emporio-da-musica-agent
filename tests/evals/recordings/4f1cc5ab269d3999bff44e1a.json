@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Thiago, achei seu pedido 2 aqui: a Taylor 110e Dreadnought Natural, no valor de R$ 5.999,00 em 6x no crédito. Ele consta como **entregue**, com código de rastreio BRCX9876543BR e entrega prevista pra 15/11/2025.\n\nPrecisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 1941,
+  "completion_tokens": 88,
+  "total_tokens": 2029,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 149
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1349
+}

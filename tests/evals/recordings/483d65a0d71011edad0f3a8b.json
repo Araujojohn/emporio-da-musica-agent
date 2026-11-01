@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "O Takamine GD20 Dreadnought Natural tá saindo por R$ 2.199,00, com 5 unidades em estoque. No PIX fica R$ 2.089,05 (5% de desconto) ou em até 12x sem juros.\n\nDesconto extra de 20% eu não tenho como autorizar por aqui — quem cuida disso é a equipe da loja. Quer que eu te passe o contato deles pra você negociar? Ou, se o PIX já resolver, posso te ajudar a seguir com o pedido."
+ },
+ "usage": {
+  "prompt_tokens": 2017,
+  "completion_tokens": 128,
+  "total_tokens": 2145,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 225
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1831
+}

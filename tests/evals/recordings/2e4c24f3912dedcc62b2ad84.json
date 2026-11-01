@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Oi! Flauta transversal não está no nosso catálogo hoje, não. Mas a gente trabalha com instrumentos de sopro — quer que eu veja o que tem disponível nessa categoria, tipo sax ou clarinete?"
+ },
+ "usage": {
+  "prompt_tokens": 1891,
+  "completion_tokens": 50,
+  "total_tokens": 1941,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 227
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1343
+}

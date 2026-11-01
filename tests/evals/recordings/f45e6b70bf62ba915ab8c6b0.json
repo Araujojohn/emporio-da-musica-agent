@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "O WhatsApp da Empório da Música é **(67) 3341-4444** — o mesmo número do telefone fixo. 😊\n\nPrecisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2278,
+  "completion_tokens": 41,
+  "total_tokens": 2319,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 486
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1092
+}

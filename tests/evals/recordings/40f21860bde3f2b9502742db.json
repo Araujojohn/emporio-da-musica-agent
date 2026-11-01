@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Sou o Téo, assistente virtual da Empório da Música 😄 Um robô, mas dos bons: entendo de instrumento e ajudo no que precisar por aqui.\n\nQuer dar uma olhada em algum instrumento ou tirar alguma dúvida?"
+ },
+ "usage": {
+  "prompt_tokens": 1792,
+  "completion_tokens": 60,
+  "total_tokens": 1852,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 256
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1453
+}

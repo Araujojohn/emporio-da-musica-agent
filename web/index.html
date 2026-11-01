@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Empório da Música · Atendimento</title>
+<meta name="description" content="Agente de atendimento da Empório da Música, com os bastidores de cada resposta à vista.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<div class="fundo" aria-hidden="true"><div class="aurora a1"></div><div class="aurora a2"></div><div class="feixe"></div><canvas id="estrelas"></canvas><div class="grao"></div></div>
+
+<div class="app">
+  <main class="conversa">
+    <header class="topo">
+      <div class="marca"><span class="monograma">EM</span><div><strong>Empório da Música</strong><small>Sua música começa aqui</small></div></div>
+      <div class="topo-acoes">
+        <button class="sec" id="abrir-bastidores">Bastidores</button>
+        <button class="sec" id="nova">Nova conversa</button>
+      </div>
+    </header>
+
+    <section class="rolagem" id="rolagem">
+      <div class="inicio" id="inicio">
+        <div class="fontes" id="fontes"></div>
+        <h1>Oi, eu sou o Téo</h1>
+        <p>Assistente virtual da loja. Pergunte sobre instrumentos, pedidos, trocas ou pagamento.</p>
+        <div class="sugestoes" id="sugestoes"></div>
+      </div>
+      <div class="mensagens" id="mensagens" aria-live="polite"></div>
+    </section>
+
+    <form class="entrada" id="form">
+      <div class="entrada-linha">
+        <textarea id="texto" rows="1" maxlength="800" placeholder="Escreva sua mensagem" aria-label="Sua mensagem"></textarea>
+        <button class="pri" id="enviar" type="submit">Enviar</button>
+      </div>
+      <small>Loja fictícia e dados de demonstração, com pedidos até 25/03/2026. O Téo é uma IA e pode errar.</small>
+    </form>
+  </main>
+
+  <aside class="bastidores" id="bastidores">
+    <header class="bast-topo">
+      <div class="abas" role="tablist">
+        <button class="aba ativa" data-aba="ao-vivo" role="tab">Ao vivo</button>
+        <button class="aba" data-aba="qualidade" role="tab">Qualidade</button>
+        <button class="aba" data-aba="como" role="tab">Como funciona</button>
+      </div>
+      <button class="fechar" id="fechar-bastidores" aria-label="Fechar bastidores">Fechar</button>
+    </header>
+
+    <section class="painel" id="ao-vivo">
+      <div class="vazio" id="trace-vazio">
+        <span class="rotulo">Bastidores</span>
+        <p>Cada resposta aparece aqui passo a passo: o que o agente consultou, o que voltou, como a resposta foi conferida, quanto tempo levou e quanto custou.</p>
+      </div>
+      <ol class="trace" id="trace"></ol>
+      <div class="totais" id="totais"></div>
+    </section>
+
+    <section class="painel oculto" id="qualidade"></section>
+
+    <section class="painel oculto" id="como">
+      <span class="rotulo">O caminho de uma mensagem</span>
+      <div class="fluxo">
+        <div class="no">Cliente</div>
+        <div class="seta"></div>
+        <div class="no destaque">Modelo decide o que consultar</div>
+        <div class="laco"><span>até 6 voltas</span></div>
+        <div class="no">Ferramentas calculam em código</div>
+        <div class="seta"></div>
+        <div class="no">Trava confere cada número</div>
+        <div class="seta"></div>
+        <div class="no">Cliente</div>
+      </div>
+      <span class="rotulo">Por que assim</span>
+      <dl class="porque">
+        <dt>Número não vem da IA</dt><dd>Preço, parcela e prazo são calculados pelas ferramentas. A IA escolhe o que perguntar e explica o resultado.</dd>
+        <dt>Identidade fica no código</dt><dd>Um pedido só abre com o telefone ou e-mail da compra. Isso não depende do prompt, então nenhuma conversa convence o agente a abrir.</dd>
+        <dt>Toda resposta é conferida</dt><dd>Um número sem origem nesta rodada faz o modelo refazer a resposta. Se persistir, só aquela frase sai.</dd>
+        <dt>Dado sempre fresco</dt><dd>Resultados antigos saem do contexto. Estoque e preço são lidos de novo a cada pergunta.</dd>
+        <dt>Custo com teto</dt><dd>Limite por visitante e por dia no código, com pedido grande bloqueado antes de chegar ao modelo.</dd>
+      </dl>
+      <a class="link" href="https://github.com/Araujojohn/emporio-da-musica-agent" target="_blank" rel="noopener">Ver código e decisões no GitHub</a>
+    </section>
+  </aside>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>

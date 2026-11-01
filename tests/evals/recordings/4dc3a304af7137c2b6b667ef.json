@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_14FJKmg04sbtJGPvYUZ48994",
+    "type": "function",
+    "function": {
+     "name": "search_policies",
+     "arguments": "{\"query\": \"frete grátis valor mínimo Campo Grande\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1797,
+  "completion_tokens": 46,
+  "total_tokens": 1843,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 261
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1264
+}

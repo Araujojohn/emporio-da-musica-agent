@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Oi! Tem sim, e é uma ótima opção pra quem tá começando: o **Rozini RC-104 Nylon Estudante** — R$ 459,90 (à vista no PIX sai por R$ 436,90, ou em até 5x sem juros). Tem 10 unidades em estoque.\n\nUma observação: ele é tamanho adulto (escala de 650mm), então pra uma criança de 8 anos pode ficar um pouco grande no começo — o ideal seria ela experimentar. Quer que eu veja se temos algum modelo menor no catálogo?"
+ },
+ "usage": {
+  "prompt_tokens": 2020,
+  "completion_tokens": 130,
+  "total_tokens": 2150,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 228
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1930
+}

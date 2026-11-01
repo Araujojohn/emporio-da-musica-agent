@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Bom dia! Amplificador não faz parte do nosso catálogo, viu? A gente trabalha com instrumentos — guitarras, baixos, baterias, teclados, violões, sopro, cordas orquestrais e ukuleles.\n\nSe quiser, posso te mostrar as guitarras que temos disponíveis. Quer dar uma olhada?"
+ },
+ "usage": {
+  "prompt_tokens": 1738,
+  "completion_tokens": 84,
+  "total_tokens": 1822,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 202
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1382
+}

@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Sou um assistente virtual da Empório da Música 😄 Mas pode falar comigo numa boa, como se fosse um amigo que entende de música.\n\nPrecisa de ajuda com algum instrumento?"
+ },
+ "usage": {
+  "prompt_tokens": 1741,
+  "completion_tokens": 45,
+  "total_tokens": 1786,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 205
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1530
+}

@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "O Ohana CK-20 Concert Natural tá saindo por **R$ 439,20** — 20% de desconto sobre o preço original de R$ 549,00. Tem 6 unidades em estoque.\n\nQuer que eu calcule o valor no PIX ou as parcelas?"
+ },
+ "usage": {
+  "prompt_tokens": 2067,
+  "completion_tokens": 65,
+  "total_tokens": 2132,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 403
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1655
+}

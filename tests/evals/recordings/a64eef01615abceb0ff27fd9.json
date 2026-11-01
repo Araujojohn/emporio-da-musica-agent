@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_z9hLiD8RhN3lqphvo4WY1575",
+    "type": "function",
+    "function": {
+     "name": "get_order",
+     "arguments": "{\"order_id\": 1, \"contact\": \"(67) 90000-0000\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1742,
+  "completion_tokens": 62,
+  "total_tokens": 1804,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 206
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1228
+}

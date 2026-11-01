@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_Elb4MKBnCQZl3xjHYILp2396",
+    "type": "function",
+    "function": {
+     "name": "search_products",
+     "arguments": "{\"query\": \"Takamine GD20\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1792,
+  "completion_tokens": 41,
+  "total_tokens": 1833,
+  "prompt_tokens_details": {
+   "cached_tokens": 256
+  },
+  "prompt_cache_hit_tokens": 256,
+  "prompt_cache_miss_tokens": 1536
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1789
+}

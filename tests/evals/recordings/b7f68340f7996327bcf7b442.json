@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa, temos bastante opção até R$1000! Olha só:\n\n**Nylon (clássico)**\n- Tagima Memphis AC-39 Natural – R$ 429,90 (PIX R$ 408,40)\n- Rozini RC-104 Estudante – R$ 459,90 (PIX R$ 436,90)\n- Yamaha C40 Natural – R$ 599,90 (PIX R$ 569,90)\n- Giannini GN-15 Cedro – R$ 689,00 (PIX R$ 654,55)\n- Yamaha C70 Natural (tampo Spruce sólido) – R$ 849,00 (PIX R$ 806,55)\n\n**Aço (folk/dreadnought)**\n- Shelby SN-100 Folk Preto – R$ 549,00 (PIX R$ 521,55)\n- Giannini GF-1R Sunburst – R$ 579,90 (PIX R$ 550,90)\n- Yamaha F310 Natural – R$ 699,90 (PIX R$ 664,90)\n- Tagima Dallas Tuner Natural – R$ 749,00 (PIX R$ 711,55)\n- Shelby SGD-195E Eletroacústico Sunburst – R$ 799,00 (PIX R$ 759,05)\n- Tagima Woodstock Dreadnought – R$ 899,00 (PIX R$ 854,05)\n- Tagima TW-7 7 Cordas – R$ 999,00 (PIX R$ 949,05)\n\nTodos com estoque disponível. Quer que eu te ajude a escolher entre nylon e aço, ou simule o pagamento de algum?"
+ },
+ "usage": {
+  "prompt_tokens": 3914,
+  "completion_tokens": 383,
+  "total_tokens": 4297,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 2122
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 2378
+}

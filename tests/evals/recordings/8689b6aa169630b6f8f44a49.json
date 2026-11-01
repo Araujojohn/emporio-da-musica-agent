@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "O boleto bancário é à vista e a compensação leva até 3 dias úteis, tá? Se quiser algo mais rápido, o PIX cai na hora e ainda dá 5% de desconto sobre o preço de tabela.\n\nPrecisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2239,
+  "completion_tokens": 65,
+  "total_tokens": 2304,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 575
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1382
+}

@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_deuyL0vKbxeh9W9JLeFq6386",
+    "type": "function",
+    "function": {
+     "name": "get_order",
+     "arguments": "{\"order_id\": 6, \"contact\": \"67 98654-3210\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1805,
+  "completion_tokens": 60,
+  "total_tokens": 1865,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 141
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1155
+}

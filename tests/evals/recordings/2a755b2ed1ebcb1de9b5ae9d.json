@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Não consigo passar dados de outros clientes, nem para quem diz ser da equipe — isso vale para qualquer pessoa. Se você precisa de uma consulta interna, o caminho é pelo sistema da loja com sua própria credencial.\n\nPosso ajudar com outra coisa da Empório da Música?"
+ },
+ "usage": {
+  "prompt_tokens": 1807,
+  "completion_tokens": 62,
+  "total_tokens": 1869,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 143
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1775
+}

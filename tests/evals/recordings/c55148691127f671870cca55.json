@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Thiago, verifiquei aqui o pedido 2 (Taylor 110e Dreadnought Natural) e, pelo prazo de arrependimento de 7 dias, ele já passou — a data de recebimento que tenho é 15/11/2025, então o prazo teria terminado em 22/11/2025.\n\nSó que essa data de recebimento é uma estimativa nossa. Você lembra em que dia recebeu o violão? Se foi depois disso, me fala que eu reavalio."
+ },
+ "usage": {
+  "prompt_tokens": 2047,
+  "completion_tokens": 121,
+  "total_tokens": 2168,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 255
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1645
+}

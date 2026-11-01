@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Vou te ajudar com isso. Só um instante, deixa eu ver como a loja trata pedidos de exclusão de dados.",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_Or9b6BeDifnEuIbLB1PH3116",
+    "type": "function",
+    "function": {
+     "name": "search_policies",
+     "arguments": "{\"query\": \"exclusão de dados pessoais privacidade LGPD\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1791,
+  "completion_tokens": 78,
+  "total_tokens": 1869,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 255
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1574
+}

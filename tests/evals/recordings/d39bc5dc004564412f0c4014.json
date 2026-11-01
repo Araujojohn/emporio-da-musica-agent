@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa notícia, Thiago! Sua devolução está dentro do prazo — o limite é 27/03/2026 e você recebeu em 20/03.\n\nDetalhes:\n- Item: Taylor 110e Dreadnought Natural\n- Condições: o instrumento precisa estar sem uso, na embalagem original, com todos os acessórios e manuais\n- Reembolso pelo mesmo meio de pagamento (crédito em 6x) em até 10 dias úteis\n- O frete de retorno é por conta da loja\n\nSó preciso confirmar duas coisas: o violão não é personalizado nem item de \"venda final\", e não se trata de um bocal (§4.4). Pode confirmar que está tudo certo com o produto nesse sentido?\n\nSe estiver, já sigo com o encaminhamento da coleta."
+ },
+ "usage": {
+  "prompt_tokens": 2324,
+  "completion_tokens": 197,
+  "total_tokens": 2521,
+  "prompt_tokens_details": {
+   "cached_tokens": 2048
+  },
+  "prompt_cache_hit_tokens": 2048,
+  "prompt_cache_miss_tokens": 276
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1932
+}

@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Temos sim! O **Rozini RC-104 Nylon Estudante** sai por **R$ 459,90** — é um violão clássico de estudo, com cordas de nylon (mais macias pros dedinhos de quem tá começando) e 10 unidades em estoque.\n\nNo PIX fica **R$ 436,90**, ou dá pra parcelar em até 5x sem juros.\n\nSó um detalhe: ele tem escala de 650mm, que é tamanho de violão adulto. Pra uma criança de 8 anos, um modelo de escala menor costuma ser mais confortável — mas não tenho esse modelo no catálogo agora. Quer que eu veja outras opções de violão pra você comparar?"
+ },
+ "usage": {
+  "prompt_tokens": 2082,
+  "completion_tokens": 165,
+  "total_tokens": 2247,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 290
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1929
+}

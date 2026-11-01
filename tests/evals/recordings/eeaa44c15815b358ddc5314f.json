@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "O mais em conta é o **Shelby SU-21S Soprano Sunburst**: R$ 159,90 (ou R$ 151,91 no PIX), com 8 unidades em estoque. É um soprano com acabamento Sunburst, ótimo pra começar.\n\nLogo depois vem o **Kalani KAL-300S Soprano Natural**, a R$ 179,90 (R$ 170,91 no PIX), com tampo em Spruce.\n\nQuer que eu te conte mais sobre algum deles?"
+ },
+ "usage": {
+  "prompt_tokens": 3933,
+  "completion_tokens": 114,
+  "total_tokens": 4047,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 2269
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1960
+}

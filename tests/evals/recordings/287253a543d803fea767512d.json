@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "A nossa loja fica na Rua 14 de Maio, 3200 — Centro, Campo Grande/MS, CEP 79202-333. O telefone/WhatsApp é (67) 3341-4444.\n\nHoje é quarta, então estamos abertos até as 18h. Precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2326,
+  "completion_tokens": 75,
+  "total_tokens": 2401,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 534
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1455
+}

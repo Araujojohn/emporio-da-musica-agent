@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "O Shelby SN-7C (7 cordas nylon natural) foi descontinuado, não faz mais parte do nosso catálogo. Mas tenho opções parecidas por aqui:\n\n- **Tagima Dallas Tuner Aço Natural** – R$ 749,00 (R$ 711,55 no PIX), 9 em estoque\n- **Yamaha F310 Aço Natural** – R$ 699,90 (R$ 664,90 no PIX), 14 em estoque\n- **Shelby SGD-195E Elétrico Aço Sunburst** – R$ 799,00 (R$ 759,05 no PIX), 6 em estoque\n\nQuer que eu te ajude a escolher entre elas?"
+ },
+ "usage": {
+  "prompt_tokens": 2531,
+  "completion_tokens": 162,
+  "total_tokens": 2693,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 867
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1756
+}

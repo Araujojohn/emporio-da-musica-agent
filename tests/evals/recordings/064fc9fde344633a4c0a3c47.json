@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_VUY0s1mxvupY2Vm8aXxE9926",
+    "type": "function",
+    "function": {
+     "name": "search_policies",
+     "arguments": "{\"query\": \"garantia\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1790,
+  "completion_tokens": 40,
+  "total_tokens": 1830,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 254
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1274
+}

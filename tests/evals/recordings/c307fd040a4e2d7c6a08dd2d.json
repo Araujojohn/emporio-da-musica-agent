@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Poxa, sinto muito por isso — ninguém deveria ficar esperando resposta. Vou encaminhar sua reclamação pra equipe agora.",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_BHkAKstBBOzix6J67cEh8384",
+    "type": "function",
+    "function": {
+     "name": "escalate_to_human",
+     "arguments": "{\"reason\": \"complaint\", \"summary\": \"Cliente relata falta de resposta no atendimento e quer registrar reclamação.\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1753,
+  "completion_tokens": 107,
+  "total_tokens": 1860,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 217
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1378
+}

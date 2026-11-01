@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_Nm2A3SX0aVSnGpTzA9g30592",
+    "type": "function",
+    "function": {
+     "name": "search_policies",
+     "arguments": "{\"query\": \"horário de funcionamento sábado\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1742,
+  "completion_tokens": 45,
+  "total_tokens": 1787,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 206
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1140
+}

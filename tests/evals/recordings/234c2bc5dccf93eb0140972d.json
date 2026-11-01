@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_DpDOIWKwdgTjp5JJoThi5001",
+    "type": "function",
+    "function": {
+     "name": "search_products",
+     "arguments": "{\"on_promotion\": true}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1790,
+  "completion_tokens": 41,
+  "total_tokens": 1831,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 254
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1238
+}

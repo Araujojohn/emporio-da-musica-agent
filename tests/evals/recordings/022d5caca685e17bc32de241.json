@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Thiago, tá tudo certo pra devolução! 👍\n\n- **Pedido 2** – Taylor 110e Dreadnought Natural (1 unidade)\n- Recebido em 20/03, você tem até **27/03** pra devolver (arrependimento, §4.1)\n- Reembolso pelo mesmo meio de pagamento em até 10 dias úteis, e o frete de retorno é por nossa conta\n\nSó preciso confirmar três coisas: o violão está **sem uso**, na **embalagem original** e com **todos os acessórios e manuais**? E ele não é personalizado nem item de liquidação final, certo?\n\nMe confirma isso que eu sigo com o processo."
+ },
+ "usage": {
+  "prompt_tokens": 2071,
+  "completion_tokens": 165,
+  "total_tokens": 2236,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 279
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 2071
+}

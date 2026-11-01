@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Oi! A garantia funciona assim:\n\n- **Garantia legal:** 90 dias contra defeitos de fabricação, contados a partir do recebimento do produto.\n- **Garantia do fabricante:** a maioria oferece de 6 meses a 2 anos, conforme o certificado que vem com cada produto.\n\nSe quiser, me diz qual instrumento você está olhando que eu vejo os detalhes pra você. Precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2016,
+  "completion_tokens": 100,
+  "total_tokens": 2116,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 224
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1414
+}

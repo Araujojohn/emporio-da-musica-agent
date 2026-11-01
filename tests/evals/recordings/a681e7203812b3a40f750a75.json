@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Claro, posso te ajudar com isso! Pra eu verificar a devolução, me passa o número do pedido e o telefone ou e-mail que você usou na compra?"
+ },
+ "usage": {
+  "prompt_tokens": 1748,
+  "completion_tokens": 40,
+  "total_tokens": 1788,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 212
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1926
+}

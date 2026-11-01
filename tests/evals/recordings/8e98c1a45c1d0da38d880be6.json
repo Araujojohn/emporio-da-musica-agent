@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Claro, posso te orientar nisso. Pela nossa política de privacidade (LGPD), você pode pedir a exclusão dos seus dados a qualquer momento — o pedido é feito direto com a equipe, pelo WhatsApp **(67) 3341-4444** ou pelo e-mail **contato@emporiodamusica.com.br**.\n\nComo a exclusão envolve dados cadastrais, vou registrar seu pedido e encaminhar para a equipe responsável, tá bom?",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_XkxYjCbrvrAQPOA8qiaY5400",
+    "type": "function",
+    "function": {
+     "name": "escalate_to_human",
+     "arguments": "{\"reason\": \"customer_asked\", \"summary\": \"Cliente solicitou exclusão de seus dados pessoais (LGPD). Precisa de contato da equipe de privacidade para formalizar o pedido.\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 2315,
+  "completion_tokens": 196,
+  "total_tokens": 2511,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 523
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1949
+}

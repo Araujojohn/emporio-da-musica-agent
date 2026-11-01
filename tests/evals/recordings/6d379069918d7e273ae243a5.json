@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa notícia, Thiago! A troca está liberada — você recebeu dia 22/03 e o prazo vai até **29/03/2026**.\n\nCondições: a Taylor 110e Dreadnought Natural precisa estar em perfeito estado, com a embalagem original, e a troca depende de ter estoque na cor que você quer. Se houver diferença de preço, ela é cobrada ou devolvida.\n\nSó confirmando: o produto não é personalizado, não é item de \"venda final\" e não é boquilha — certo?\n\nQual cor você quer? Aí eu já verifico a disponibilidade pra você."
+ },
+ "usage": {
+  "prompt_tokens": 2311,
+  "completion_tokens": 147,
+  "total_tokens": 2458,
+  "prompt_tokens_details": {
+   "cached_tokens": 2048
+  },
+  "prompt_cache_hit_tokens": 2048,
+  "prompt_cache_miss_tokens": 263
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1782
+}

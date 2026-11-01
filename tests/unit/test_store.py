@@ -56,7 +56,18 @@ def test_naming_an_unavailable_product_explains_it_and_offers_alternatives(store
 
 
 def test_coming_soon_has_no_price_even_with_stock_in_the_csv(store):
-    assert "price_brl" not in store.search("KA-ABP-CTG")["products"][0]
+    card = store.search("KA-ABP-CTG")["products"][0]
+    assert "price_brl" not in card and "ainda não está à venda" in card["availability_note"]
+
+
+def test_empty_search_says_it_is_not_in_the_catalog(store):
+    result = store.search("flauta transversal")
+    assert "não tem isso no catálogo" in result["note"]
+    assert "Instrumentos de Sopro (Madeiras)" not in result["categories_in_stock"]
+
+
+def test_promotion_filter_lists_only_live_promotions(store):
+    assert store.search(on_promotion=True)["total_found"] == 4
 
 
 def test_typo_still_finds_the_product(store):

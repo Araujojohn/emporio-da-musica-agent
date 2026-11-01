@@ -23,6 +23,13 @@ PAYMENT = {"pix": "PIX", "debit": "débito", "boleto": "boleto", "credit_3x": "c
 AVAILABLE, OUT_OF_STOCK, DISCONTINUED, COMING_SOON = "available", "out_of_stock", "discontinued", "coming_soon"
 STOPWORDS = {"o", "a", "os", "as", "de", "do", "da", "dos", "das", "um", "uma", "para", "pra", "com", "e", "em"}
 MIN_CONTACT_DIGITS = 8
+# Said in words because the model read "coming_soon" plus alternatives as "esgotado" in the first eval run.
+AVAILABILITY_NOTES = {
+    OUT_OF_STOCK: "Temporariamente sem estoque.",
+    DISCONTINUED: "Descontinuado: não faz mais parte do catálogo.",
+    COMING_SOON: "Lançamento: chega em breve e ainda não está à venda. Sem preço definido.",
+}
+NOT_IN_CATALOG = "Nada encontrado: a loja não tem isso no catálogo hoje. Não diga que está esgotado."
 
 
 def _read(name: str, folder: Path) -> list[dict]:
@@ -96,6 +103,8 @@ class Store:
             "description": product["description"],
             "specs": product["specs"],
         }
+        if availability in AVAILABILITY_NOTES:
+            card["availability_note"] = AVAILABILITY_NOTES[availability]
         if availability in (AVAILABLE, OUT_OF_STOCK):
             card["price_brl"] = price
         if availability == AVAILABLE:
@@ -135,9 +144,11 @@ class Store:
         return [pid for pid, score in hits.items() if score == best] if best else []
 
     def search(self, query: str = "", category: str = "", min_price: float | None = None,
-               max_price: float | None = None, limit: int = 12) -> dict:
+               max_price: float | None = None, on_promotion: bool = False, limit: int = 12) -> dict:
         """Naming a product shows it whatever its status. Browsing shows only what can be bought today."""
         found = [self.products[pid] for pid in self._matches(query)]
+        if on_promotion:
+            found = [p for p in found if p["product_id"] in self.promotions]
         if category:
             wanted = normalize(category).rstrip("s")
             found = [p for p in found if wanted in normalize(self.categories[p["category_id"]])]
@@ -150,7 +161,12 @@ class Store:
         found.sort(key=lambda p: (self.availability(p) != AVAILABLE, self.price_now(p)))
         cards = [self.card(p) for p in found[:limit]]
         result = {"total_found": len(found), "shown": len(cards), "products": cards}
-        if found and all(self.availability(p) != AVAILABLE for p in found):
+        if not found:
+            result["note"] = NOT_IN_CATALOG
+            # Without this the model offered "sax or clarinet", which the store lists as a category but does not stock
+            result["categories_in_stock"] = sorted({self.categories[p["category_id"]] for p in self.products.values()
+                                                    if self.availability(p) == AVAILABLE})
+        elif all(self.availability(p) != AVAILABLE for p in found):
             result["alternatives"] = self._alternatives(found[0])
         return result
 

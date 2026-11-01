@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa pergunta! Pra eu consultar seu pedido aqui, me passa o número dele e o telefone ou e-mail que você usou na compra. Aí eu vejo a situação pra você."
+ },
+ "usage": {
+  "prompt_tokens": 1793,
+  "completion_tokens": 44,
+  "total_tokens": 1837,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 257
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1172
+}

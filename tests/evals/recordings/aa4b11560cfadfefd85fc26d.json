@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "O mais em conta é o **Shelby SU-21S Soprano Sunburst** — R$ 159,90 (no PIX sai R$ 151,91, ou em até 3x sem juros). Tem 8 unidades em estoque.\n\nSe quiser um degrau acima, o **Kalani KAL-300S Soprano Natural** tá R$ 179,90 e o **Kala KA-15S** R$ 199,90 — esse último é bem querido por quem tá começando.\n\nQuer que eu te conte mais de algum deles?"
+ },
+ "usage": {
+  "prompt_tokens": 3984,
+  "completion_tokens": 125,
+  "total_tokens": 4109,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 2192
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1991
+}

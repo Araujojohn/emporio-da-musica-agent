@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa pergunta! Mas antes preciso entender: você quer trocar a boquilha por outro modelo (tipo, abertura diferente) ou está falando de uma compra que fez com a gente?\n\nSe for troca de um pedido, me passa o número do pedido e o telefone ou e-mail da compra que eu verifico pra você. Se for só uma dúvida sobre boquilhas, te adianto: boquilha é acessório e não faz parte do nosso catálogo — a gente trabalha com os instrumentos. 😊"
+ },
+ "usage": {
+  "prompt_tokens": 1743,
+  "completion_tokens": 122,
+  "total_tokens": 1865,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 207
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1927
+}

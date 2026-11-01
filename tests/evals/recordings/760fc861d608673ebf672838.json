@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Frete grátis em Campo Grande pra pedidos acima de R$ 500,00. Abaixo disso, a taxa é fixa de R$ 35,00, com entrega em 1 a 3 dias úteis por motoboy da loja.\n\nPrecisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2185,
+  "completion_tokens": 68,
+  "total_tokens": 2253,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 393
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1148
+}

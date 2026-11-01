@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_c3VR34NlrNkhOmiUQzDN8473",
+    "type": "function",
+    "function": {
+     "name": "search_products",
+     "arguments": "{\"query\": \"jogo de cordas de nylon\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1794,
+  "completion_tokens": 44,
+  "total_tokens": 1838,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 258
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1376
+}

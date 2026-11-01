@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Thiago, pelo que consta aqui a entrega foi em 15/11/2025, e o prazo de arrependimento de 7 dias venceu em 22/11/2025 — já se passaram uns 130 dias. Então por arrependimento não dá mais, infelizmente.\n\nSó uma coisa: essa data de recebimento é estimada. Você recebeu nessa data mesmo? Se tiver recebido depois, me fala que eu reavalio. E se for algum problema com o instrumento, me conta o que está acontecendo que a gente vê a garantia."
+ },
+ "usage": {
+  "prompt_tokens": 2072,
+  "completion_tokens": 140,
+  "total_tokens": 2212,
+  "prompt_tokens_details": {
+   "cached_tokens": 1920
+  },
+  "prompt_cache_hit_tokens": 1920,
+  "prompt_cache_miss_tokens": 152
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1766
+}

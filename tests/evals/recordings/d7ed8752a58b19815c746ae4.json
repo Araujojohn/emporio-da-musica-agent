@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Claro, posso te encaminhar isso. Pela política de privacidade da loja (LGPD), você pode pedir a exclusão dos seus dados a qualquer momento pelo WhatsApp ou e-mail — e eu já registro o pedido pra equipe responsável.\n\nSó me confirma uma coisa: você quer que eu encaminhe agora o pedido de exclusão dos seus dados de cadastro/atendimento?\n\nSe sim, eu abro o protocolo e te passo o número."
+ },
+ "usage": {
+  "prompt_tokens": 2369,
+  "completion_tokens": 105,
+  "total_tokens": 2474,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 577
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1659
+}

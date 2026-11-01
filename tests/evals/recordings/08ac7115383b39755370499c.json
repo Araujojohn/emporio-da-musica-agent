@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Deixa eu confirmar os valores atualizados pra você.",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_IltreYoT1QC8nHaVp9Kb9770",
+    "type": "function",
+    "function": {
+     "name": "search_products",
+     "arguments": "{\"query\": \"Yamaha C40\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1938,
+  "completion_tokens": 53,
+  "total_tokens": 1991,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 146
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1192
+}

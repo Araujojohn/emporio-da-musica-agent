@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_kD2ZAETGZ25uWaqZzUOs0497",
+    "type": "function",
+    "function": {
+     "name": "search_policies",
+     "arguments": "{\"query\": \"promoções vigentes\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1840,
+  "completion_tokens": 42,
+  "total_tokens": 1882,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 176
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 940
+}

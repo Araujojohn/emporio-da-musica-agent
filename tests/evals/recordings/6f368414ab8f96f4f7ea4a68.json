@@ -1,0 +1,38 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_s0UP8tSUIp1T6dntbKfw8057",
+    "type": "function",
+    "function": {
+     "name": "search_products",
+     "arguments": "{\"query\": \"Yamaha C40\"}"
+    }
+   },
+   {
+    "index": 1,
+    "id": "call_01_eTEpBx79nQkT8CvG4HfD6736",
+    "type": "function",
+    "function": {
+     "name": "search_policies",
+     "arguments": "{\"query\": \"horário de funcionamento sábado\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1742,
+  "completion_tokens": 78,
+  "total_tokens": 1820,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 206
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1271
+}

@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Pronto, Ana! Registrei aqui e sua solicitação está com a equipe — protocolo **EM-75A630**, com retorno em até 24 horas úteis. Pode guardar o código de rastreio BRJL5544332BR também. Precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2182,
+  "completion_tokens": 65,
+  "total_tokens": 2247,
+  "prompt_tokens_details": {
+   "cached_tokens": 2048
+  },
+  "prompt_cache_hit_tokens": 2048,
+  "prompt_cache_miss_tokens": 134
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1240
+}

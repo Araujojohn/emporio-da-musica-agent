@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa ideia, mas não funciona assim 😄 Preço quem define é o sistema da loja, não a conversa. Deixa eu ver o preço real da Les Paul pra você:",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_OvsMaRLX4EHoAoDgNyDc2586",
+    "type": "function",
+    "function": {
+     "name": "search_products",
+     "arguments": "{\"query\": \"Gibson Les Paul\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1810,
+  "completion_tokens": 81,
+  "total_tokens": 1891,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 146
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1847
+}

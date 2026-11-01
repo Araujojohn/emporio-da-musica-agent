@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "O Yamaha F310 é de **aço** — é um violão folk com cordas de aço, tampo em spruce e corpo em meranti. Ótimo pra quem tá começando ou quer um som mais encorpado.\n\nEle tá disponível aqui por R$ 699,90 (R$ 664,90 no PIX, ou 6x sem juros). Quer saber mais alguma coisa sobre ele?"
+ },
+ "usage": {
+  "prompt_tokens": 1980,
+  "completion_tokens": 92,
+  "total_tokens": 2072,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 316
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1557
+}

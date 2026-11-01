@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa ideia, mas aí eu não consigo te ajudar — eu só cuido do atendimento da Empório da Música, então script de Python fica fora do meu alcance. 😅\n\nSe quiser, posso te ajudar com instrumentos: ver preço, estoque, pedido ou alguma regra da loja. O que você tá procurando?"
+ },
+ "usage": {
+  "prompt_tokens": 1790,
+  "completion_tokens": 81,
+  "total_tokens": 1871,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 254
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1515
+}

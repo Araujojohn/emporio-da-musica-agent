@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "A Empório da Música existe desde 2008, aqui em Campo Grande — Rua 14 de Maio, 3200, no Centro. Já são uns bons anos de estrada ajudando o pessoal da música da região! 🎸\n\nPrecisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2379,
+  "completion_tokens": 64,
+  "total_tokens": 2443,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 587
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1765
+}

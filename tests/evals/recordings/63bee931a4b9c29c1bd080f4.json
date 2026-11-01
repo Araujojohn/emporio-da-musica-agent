@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Opa! Agora não, não — a loja já fechou hoje. A gente reabre amanhã às 9h. 😊\n\nQuer que eu já te ajude com alguma coisa enquanto isso? Posso ver preço, estoque ou tirar dúvidas de produto."
+ },
+ "usage": {
+  "prompt_tokens": 1745,
+  "completion_tokens": 66,
+  "total_tokens": 1811,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 209
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1387
+}

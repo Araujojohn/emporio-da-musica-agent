@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Achei aqui, Gabriel! O código de rastreio do pedido 6 é **BRVN6543210BR**, e o status consta como entregue (a entrega estava prevista pra 01/02). Precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2005,
+  "completion_tokens": 56,
+  "total_tokens": 2061,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 213
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1136
+}

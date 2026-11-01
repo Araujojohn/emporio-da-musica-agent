@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Oi! Só pra eu te ajudar certo: você procura um **jogo de cordas de nylon avulso** ou um **instrumento com cordas de nylon**?\n\nSe for o jogo de cordas, te adianto que a gente não trabalha com acessórios (cordas, palhetas, cabos) — nosso catálogo é de instrumentos.\n\nSe for o instrumento, temos boas opções com cordas de nylon:\n\n- **Tagima Memphis AC-39 Nylon Natural** – R$ 429,90 (violão clássico, ótimo pra começar)\n- **Giannini GWNE-7 7 Cordas Nylon** – R$ 1.149,00\n- **Rozini RV-174 7 Cordas Nylon** – R$ 1.299,00\n- **Yamaha NTX1 Elétrico Nylon** – R$ 3.499,00\n- Ukuleles com cordas Aquila: **Kala KA-15S** – R$ 199,90 e **Ohana SK-10** – R$ 249,90\n\nQual desses faz mais o seu estilo?"
+ },
+ "usage": {
+  "prompt_tokens": 3239,
+  "completion_tokens": 258,
+  "total_tokens": 3497,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 1447
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 2120
+}

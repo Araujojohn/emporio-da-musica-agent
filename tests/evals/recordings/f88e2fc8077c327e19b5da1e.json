@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Prontinho! Registrei seu pedido com o protocolo **EM-B23ABA** e a equipe responsável entra em contato em até **24 horas úteis** para confirmar a exclusão dos seus dados.\n\nSe quiser adiantar, pode também mandar a solicitação pelo WhatsApp (67) 3341-4444 ou pelo e-mail contato@emporiodamusica.com.br. Precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2546,
+  "completion_tokens": 95,
+  "total_tokens": 2641,
+  "prompt_tokens_details": {
+   "cached_tokens": 2304
+  },
+  "prompt_cache_hit_tokens": 2304,
+  "prompt_cache_miss_tokens": 242
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1586
+}

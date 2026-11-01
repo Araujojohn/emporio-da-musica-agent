@@ -31,7 +31,8 @@ SCHEMAS = [
               {"query": {"type": "string", "description": "Nome, marca, modelo ou característica. Vazio para navegar por categoria."},
                "category": {"type": "string", "description": "Guitarras, Baixos, Baterias e Percussão, Teclados e Pianos, Violões, Instrumentos de Sopro, Cordas Orquestrais ou Ukuleles."},
                "min_price": {"type": "number"},
-               "max_price": {"type": "number"}}),
+               "max_price": {"type": "number"},
+               "on_promotion": {"type": "boolean", "description": "true para listar só o que está em promoção hoje."}}),
     _function("get_order",
               "Consulta um pedido. Exige o número do pedido e o telefone ou e-mail usado na compra; peça o que faltar. "
               "Depois de verificado, o mesmo pedido não precisa de contato de novo nesta conversa.",
@@ -91,8 +92,8 @@ def _authorize(order_id: int, contact: str, ctx: dict) -> dict | None:
 
 
 def search_products(ctx: dict, query: str = "", category: str = "", min_price: float | None = None,
-                    max_price: float | None = None) -> dict:
-    return store().search(query, category, min_price, max_price)
+                    max_price: float | None = None, on_promotion: bool = False) -> dict:
+    return store().search(query, category, min_price, max_price, on_promotion)
 
 
 def get_order(ctx: dict, order_id: int, contact: str = "") -> dict:

@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Claro, posso verificar isso pra você! Só preciso de dois dados: o número do pedido e o telefone ou e-mail usado na compra."
+ },
+ "usage": {
+  "prompt_tokens": 1799,
+  "completion_tokens": 35,
+  "total_tokens": 1834,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 135
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1312
+}

@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa pergunta, mas política eu deixo de lado — eu só ajudo com a Empório da Música. 😄 Tá procurando algum instrumento ou precisa de algo da loja?"
+ },
+ "usage": {
+  "prompt_tokens": 1737,
+  "completion_tokens": 42,
+  "total_tokens": 1779,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 201
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1291
+}

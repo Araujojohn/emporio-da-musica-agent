@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa ideia, mas desconto eu não consigo fechar por aqui, não. Deixa eu ver como está o preço do GD20 hoje pra você ter o valor real:",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_K2cdCI7fQXpDmGnGIXch4519",
+    "type": "function",
+    "function": {
+     "name": "search_products",
+     "arguments": "{\"query\": \"Takamine GD20\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1738,
+  "completion_tokens": 79,
+  "total_tokens": 1817,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 202
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1455
+}

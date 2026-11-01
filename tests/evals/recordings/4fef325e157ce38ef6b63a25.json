@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_EKRjaHMwNQOhQVzH9yAU5296",
+    "type": "function",
+    "function": {
+     "name": "search_policies",
+     "arguments": "{\"query\": \"boleto prazo de compensação pagamento\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1792,
+  "completion_tokens": 46,
+  "total_tokens": 1838,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 256
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1107
+}

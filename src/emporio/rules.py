@@ -19,7 +19,8 @@ LEGAL_WARRANTY_DAYS = 90  # §8.1
 def store_status(moment: datetime) -> str:
     """§7.1 asks the assistant to state the return time outside business hours. Holidays are not in the data."""
     hours = OPENING_HOURS.get(moment.weekday())
-    today = f"Agora é {WEEKDAYS[moment.weekday()]}, {moment:%d/%m/%Y}, {moment:%H:%M} em Campo Grande."
+    today = (f"Responda no idioma da última mensagem do cliente. "
+             f"Agora é {WEEKDAYS[moment.weekday()]}, {moment:%d/%m/%Y}, {moment:%H:%M} em Campo Grande.")
     if hours and hours[0] <= moment.hour < hours[1]:
         return f"{today} A loja está aberta até as {hours[1]}h."
     for ahead in range(0, 8):
@@ -123,4 +124,6 @@ def _decision(decision: str, section: str, explanation: str, facts: dict | None 
     result = {"decision": decision, "policy_section": section, "explanation": explanation, **(facts or {})}
     if decision == "allowed":
         result["must_confirm_with_customer"] = "Not customized, not a 'final sale' item, not a mouthpiece (§4.4)."
+    if decision == "needs_human":
+        result["next_step"] = "Use escalate_to_human agora, sem pedir mais dados ao cliente."
     return result

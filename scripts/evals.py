@@ -20,9 +20,11 @@ os.environ.setdefault("FIXED_NOW", "2026-03-25T10:30:00")
 os.environ["STATE_DIR"] = str(ROOT / "var" / "evals")
 
 from emporio import config, llm  # noqa: E402
+from emporio.policies import PolicyIndex  # noqa: E402
 from tests.evals.comportamento.cases import CASES as BEHAVIOR  # noqa: E402
 from tests.evals.desempenho.cases import CASES as PERFORMANCE  # noqa: E402
 from tests.evals.harness import failures, run_case  # noqa: E402
+from tests.unit.test_retrieval import GOLDEN  # noqa: E402
 
 REPORT = ROOT / "reports" / "evals.json"
 
@@ -47,6 +49,17 @@ def evaluate(cases: list) -> dict:
             "model": rows[-1]["model"], "date": time.strftime("%Y-%m-%d"), "rows": rows}
 
 
+def retrieval_metrics() -> dict:
+    index = PolicyIndex.load()
+    ranks = []
+    for question, section in GOLDEN:
+        found = [s.number for s in index.search(question)]
+        ranks.append(found.index(section) + 1 if section in found else 0)
+    return {"questions": len(GOLDEN), "recall_at_3": sum(r > 0 for r in ranks) / len(ranks),
+            "first_position_rate": round(sum(r == 1 for r in ranks) / len(ranks), 3),
+            "mrr": round(sum(1 / r for r in ranks if r) / len(ranks), 3)}
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("suite", choices=["behavior", "performance"])
@@ -63,6 +76,7 @@ def main() -> None:
         REPORT.parent.mkdir(exist_ok=True)
         report = json.loads(REPORT.read_text(encoding="utf-8")) if REPORT.exists() else {}
         report[args.suite] = result
+        report["retrieval"] = retrieval_metrics()
         REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")
     sys.exit(0 if result["passed"] == result["cases"] else 1)
 

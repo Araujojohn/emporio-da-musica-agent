@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Pedro, achei seu pedido 19 aqui: ele foi **cancelado** porque o pagamento (boleto) não foi confirmado dentro do prazo. O pedido era de uma Taylor 214ce Elétrico Aço Natural, no valor de R$ 7.499,00, feito em 22/02.\n\nSe quiser, posso verificar como está o estoque dessa viola hoje pra você refazer a compra. Quer que eu dê uma olhada?"
+ },
+ "usage": {
+  "prompt_tokens": 1931,
+  "completion_tokens": 107,
+  "total_tokens": 2038,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 139
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1684
+}

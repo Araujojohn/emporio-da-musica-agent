@@ -1,0 +1,38 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Bom dia! Deixa eu confirmar as formas de pagamento pra você.",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_m4kURslvQ2DE3mJSeEuu3239",
+    "type": "function",
+    "function": {
+     "name": "search_policies",
+     "arguments": "{\"query\": \"formas de pagamento pix cartão parcelamento\"}"
+    }
+   },
+   {
+    "index": 1,
+    "id": "call_01_F8O2aGlu0FJ2eAa6QEox6215",
+    "type": "function",
+    "function": {
+     "name": "simulate_payment",
+     "arguments": "{\"amount\": 2500}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1748,
+  "completion_tokens": 94,
+  "total_tokens": 1842,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 212
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1292
+}
