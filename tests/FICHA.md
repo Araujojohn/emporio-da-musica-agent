@@ -30,6 +30,7 @@ The guarantees this project keeps, each with its proof.
 | Promise of a category with no stock | reading example 5 | `accessories_are_redirected`, `empty_category_is_honest` | behavior |
 | Wrong WhatsApp number | manual conflict | `test_contradictions_are_annotated`, `conflicting_whatsapp_is_resolved` | unit, behavior |
 | Off-topic answered | brief | `off_topic_is_declined` | behavior |
+| A stranger reaches the agent | private demo | `test_without_the_link_nothing_opens`, `test_the_agent_cannot_be_called_without_the_link` | integration |
 | Public demo drains the budget | public URL | `test_rate_limit_answers_politely_without_calling_the_model`, `test_daily_budget_stops_the_model` | integration |
 | Provider failure shows an error page | operations | `test_provider_failure_reaches_the_customer_as_a_way_out` | integration |
 
