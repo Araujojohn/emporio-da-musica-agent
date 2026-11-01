@@ -9,7 +9,7 @@ A text agent for a fictional musical instrument store in Campo Grande, Brazil. I
 | Behavior evals, rules that must not break | 38 of 38 |
 | Performance evals, slang and typos | 36 of 36 |
 | Policy retrieval, 32 questions, right section in the top 3 | 100% (first position 81%) |
-| Deliberately broken code caught by the free tests | see `reports/mutations.json` |
+| Deliberately broken code caught by the free tests | 16 of 16 (`reports/mutations.json`) |
 | Cost per reply | about US$ 0.0004 |
 | Median model time per reply | 2.7 s |
 
