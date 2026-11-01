@@ -116,6 +116,7 @@ body.arrastando{cursor:col-resize;user-select:none}
 .turno{font-size:11px;color:var(--muted);margin:12px 0 2px}.turno:first-child{margin-top:0}
 .totais{display:grid;grid-template-columns:repeat(auto-fit,minmax(70px,1fr));gap:1px;background:var(--linha);border:1px solid var(--linha);border-radius:4px;overflow:hidden;margin-top:12px}
 .totais:empty{display:none}
+.totais .kpi{padding:9px 8px}.totais .kpi b{font-size:17px}.totais .kpi span{font-size:9.5px}
 .kpi{background:var(--sup-solida);padding:9px 10px;transition:background .3s}
 .kpi span{display:block;font-size:10.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
 .kpi b{font-family:var(--serif);font-weight:500;font-size:20px;color:var(--ink);transition:color .3s}
