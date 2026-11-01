@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_maM0CO5TVx681DmvV5vZ7613",
+    "type": "function",
+    "function": {
+     "name": "search_products",
+     "arguments": "{\"category\": \"Violões\", \"max_price\": 1000}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1856,
+  "completion_tokens": 57,
+  "total_tokens": 1913,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 192
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 2049
+}

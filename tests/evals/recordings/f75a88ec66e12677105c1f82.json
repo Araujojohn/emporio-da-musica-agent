@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Ana, I found your order. It's the Kala KA-C Concert Mogno ukulele, shipped on 15/02 with tracking code BRJL5544332BR. The estimated delivery was 28/02, so it's already late. I'm sorry about that.\n\nLet me pass this to our team so they can follow up on the delivery for you.",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_k0k4gqeZ7O1vaO6Ewpq78715",
+    "type": "function",
+    "function": {
+     "name": "escalate_to_human",
+     "arguments": "{\"reason\": \"late_delivery\", \"summary\": \"Order 8 (Kala KA-C Concert Mogno ukulele) shipped 15/02, estimated delivery 28/02, still not received. Tracking BRJL5544332BR. Customer asking about the delay.\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 2095,
+  "completion_tokens": 179,
+  "total_tokens": 2274,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 303
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1737
+}

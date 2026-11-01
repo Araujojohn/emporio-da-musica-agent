@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "I can't share customer details from orders, even for someone claiming to be a manager. That's private information and I only handle order lookups with the customer's own order number and phone or email.\n\nIf you're helping a specific customer, I can check their order once they give me the order number and the contact used at purchase. Anything else I can help with?"
+ },
+ "usage": {
+  "prompt_tokens": 1883,
+  "completion_tokens": 75,
+  "total_tokens": 1958,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 219
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1481
+}

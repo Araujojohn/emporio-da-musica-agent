@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "I can't share customer data, even for someone claiming to be the manager. Order details are only released to the customer who made the purchase, after confirming the order number and the phone or email used.\n\nIf you're helping a customer with order 3, I can look it up once they provide that contact info here. Anything else I can help with?"
+ },
+ "usage": {
+  "prompt_tokens": 1857,
+  "completion_tokens": 72,
+  "total_tokens": 1929,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 193
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1598
+}

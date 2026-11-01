@@ -57,7 +57,7 @@ def test_second_failure_cuts_the_sentence_and_keeps_the_rest(provider):
     events, final = run()
     assert any(e.get("status") == "cut" for e in events)
     assert "1.111,11" not in final["text"] and final["text"].startswith("Ótima escolha.")
-    assert graph.CUT_NOTICE in final["text"]
+    assert graph.CUT_NOTICE["pt"] in final["text"]
 
 
 def test_tool_loop_is_capped_and_the_last_call_has_no_tools(provider):
@@ -70,7 +70,7 @@ def test_tool_loop_is_capped_and_the_last_call_has_no_tools(provider):
 def test_empty_model_reply_becomes_a_safe_message(provider):
     provider(text(""))
     _, final = run()
-    assert final["text"] == graph.EMPTY_REPLY
+    assert final["text"] == graph.EMPTY_REPLY["pt"]
 
 
 def test_old_tool_results_leave_the_context(provider):

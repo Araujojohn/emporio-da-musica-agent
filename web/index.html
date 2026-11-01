@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Empório da Música · Atendimento</title>
-<meta name="description" content="Agente de atendimento da Empório da Música, com os bastidores de cada resposta à vista.">
+<title>Empório da Música · Customer service</title>
+<meta name="description" content="Customer service agent for Empório da Música, with the behind-the-scenes of each reply in view.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317191f'/%3E%3Cpath d='M12 22V10l11-2v12' fill='none' stroke='%23e2c58f' stroke-width='2'/%3E%3Ccircle cx='9.5' cy='22' r='2.5' fill='%23e2c58f'/%3E%3Ccircle cx='20.5' cy='20' r='2.5' fill='%23e2c58f'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -13,21 +13,22 @@
 <body>
 <div class="fundo" aria-hidden="true"><div class="aurora a1"></div><div class="aurora a2"></div><div class="feixe"></div><canvas id="estrelas"></canvas><div class="grao"></div></div>
 
-<div class="app">
+<div class="app" id="app">
   <main class="conversa">
     <header class="topo">
-      <div class="marca"><span class="monograma">EM</span><div><strong>Empório da Música</strong><small>Sua música começa aqui</small></div></div>
+      <div class="marca"><span class="monograma">EM</span><div><strong>Empório da Música</strong><small data-i18n="tagline"></small></div></div>
       <div class="topo-acoes">
-        <button class="sec" id="abrir-bastidores">Bastidores</button>
-        <button class="sec" id="nova">Nova conversa</button>
+        <button class="sec" id="idioma" type="button"></button>
+        <button class="sec" id="abrir-bastidores" type="button" data-i18n="panel"></button>
+        <button class="sec" id="nova" type="button" data-i18n="newChat"></button>
       </div>
     </header>
 
     <section class="rolagem" id="rolagem">
       <div class="inicio" id="inicio">
         <div class="fontes" id="fontes"></div>
-        <h1>Oi, eu sou o Téo</h1>
-        <p>Assistente virtual da loja. Pergunte sobre instrumentos, pedidos, trocas ou pagamento.</p>
+        <h1 data-i18n="hello"></h1>
+        <p data-i18n="intro"></p>
         <div class="sugestoes" id="sugestoes"></div>
       </div>
       <div class="mensagens" id="mensagens" aria-live="polite"></div>
@@ -35,27 +36,28 @@
 
     <form class="entrada" id="form">
       <div class="entrada-linha">
-        <textarea id="texto" rows="1" maxlength="800" placeholder="Escreva sua mensagem" aria-label="Sua mensagem"></textarea>
-        <button class="pri" id="enviar" type="submit">Enviar</button>
+        <textarea id="texto" rows="1" maxlength="800"></textarea>
+        <button class="pri" id="enviar" type="submit" data-i18n="send"></button>
       </div>
-      <small>Loja fictícia e dados de demonstração, com pedidos até 25/03/2026. O Téo é uma IA e pode errar.</small>
+      <small data-i18n="disclaimer"></small>
     </form>
   </main>
 
   <aside class="bastidores" id="bastidores">
+    <div class="puxador" id="puxador" role="separator" aria-orientation="vertical" tabindex="0" data-i18n-title="dragHint"></div>
     <header class="bast-topo">
       <div class="abas" role="tablist">
-        <button class="aba ativa" data-aba="ao-vivo" role="tab">Ao vivo</button>
-        <button class="aba" data-aba="qualidade" role="tab">Qualidade</button>
-        <button class="aba" data-aba="como" role="tab">Como funciona</button>
+        <button class="aba ativa" data-aba="ao-vivo" role="tab" data-i18n="tabLive"></button>
+        <button class="aba" data-aba="qualidade" role="tab" data-i18n="tabQuality"></button>
+        <button class="aba" data-aba="como" role="tab" data-i18n="tabHow"></button>
       </div>
-      <button class="fechar" id="fechar-bastidores" aria-label="Fechar bastidores">Fechar</button>
+      <button class="fechar" id="fechar-bastidores" type="button" data-i18n="close"></button>
     </header>
 
     <section class="painel" id="ao-vivo">
       <div class="vazio" id="trace-vazio">
-        <span class="rotulo">Bastidores</span>
-        <p>Cada resposta aparece aqui passo a passo: o que o agente consultou, o que voltou, como a resposta foi conferida, quanto tempo levou e quanto custou.</p>
+        <span class="rotulo" data-i18n="panel"></span>
+        <p data-i18n="panelEmpty"></p>
       </div>
       <ol class="trace" id="trace"></ol>
       <div class="totais" id="totais"></div>
@@ -64,27 +66,27 @@
     <section class="painel oculto" id="qualidade"></section>
 
     <section class="painel oculto" id="como">
-      <span class="rotulo">O caminho de uma mensagem</span>
+      <span class="rotulo" data-i18n="howPath"></span>
       <div class="fluxo">
-        <div class="no">Cliente</div>
+        <div class="no" data-i18n="flowCustomer"></div>
         <div class="seta"></div>
-        <div class="no destaque">Modelo decide o que consultar</div>
-        <div class="laco"><span>até 6 voltas</span></div>
-        <div class="no">Ferramentas calculam em código</div>
+        <div class="no destaque" data-i18n="flowModel"></div>
+        <div class="laco"><span data-i18n="flowRounds"></span></div>
+        <div class="no" data-i18n="flowTools"></div>
         <div class="seta"></div>
-        <div class="no">Trava confere cada número</div>
+        <div class="no" data-i18n="flowGuard"></div>
         <div class="seta"></div>
-        <div class="no">Cliente</div>
+        <div class="no" data-i18n="flowCustomer"></div>
       </div>
-      <span class="rotulo">Por que assim</span>
+      <span class="rotulo" data-i18n="howWhy"></span>
       <dl class="porque">
-        <dt>Número não vem da IA</dt><dd>Preço, parcela e prazo são calculados pelas ferramentas. A IA escolhe o que perguntar e explica o resultado.</dd>
-        <dt>Identidade fica no código</dt><dd>Um pedido só abre com o telefone ou e-mail da compra. Isso não depende do prompt, então nenhuma conversa convence o agente a abrir.</dd>
-        <dt>Toda resposta é conferida</dt><dd>Um número sem origem nesta rodada faz o modelo refazer a resposta. Se persistir, só aquela frase sai.</dd>
-        <dt>Dado sempre fresco</dt><dd>Resultados antigos saem do contexto. Estoque e preço são lidos de novo a cada pergunta.</dd>
-        <dt>Custo com teto</dt><dd>Limite por visitante e por dia no código, com pedido grande bloqueado antes de chegar ao modelo.</dd>
+        <dt data-i18n="why1"></dt><dd data-i18n="why1d"></dd>
+        <dt data-i18n="why2"></dt><dd data-i18n="why2d"></dd>
+        <dt data-i18n="why3"></dt><dd data-i18n="why3d"></dd>
+        <dt data-i18n="why4"></dt><dd data-i18n="why4d"></dd>
+        <dt data-i18n="why5"></dt><dd data-i18n="why5d"></dd>
       </dl>
-      <a class="link" href="https://github.com/Araujojohn/emporio-da-musica-agent" target="_blank" rel="noopener">Ver código e decisões no GitHub</a>
+      <a class="link" href="https://github.com/Araujojohn/emporio-da-musica-agent" target="_blank" rel="noopener" data-i18n="github"></a>
     </section>
   </aside>
 </div>

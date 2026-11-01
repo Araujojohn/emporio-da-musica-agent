@@ -10,6 +10,7 @@ EVIDENCE = '{"price_brl": 2199.0, "pix_price_brl": 2089.05, "estimated_delivery"
     "Sai por R$ 2199 ou cerca de R$ 2.089.",
     "Chegou em 15/11/2025.",
     "São 5 unidades, em até 12x, 3 opções.",
+    "It costs R$ 2,199.00, or R$ 2,089.05 with PIX.",
     "Escreve pra contato@emporiodamusica.com.br.",
 ])
 def test_supported_replies_pass(reply):

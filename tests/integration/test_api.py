@@ -53,7 +53,7 @@ def test_rate_limit_answers_politely_without_calling_the_model(client, monkeypat
     for _ in range(config.RATE_LIMIT_MESSAGES):
         post(client)
     monkeypatch.setattr(llm, "complete", lambda *_: pytest.fail("model must not be called"))
-    assert events(post(client))[-1]["text"] == web.BUSY_MESSAGE
+    assert events(post(client))[-1]["text"] == web.BUSY_MESSAGE["pt"]
 
 
 def test_forged_forwarded_header_does_not_escape_the_rate_limit(client, monkeypatch):
@@ -62,13 +62,13 @@ def test_forged_forwarded_header_does_not_escape_the_rate_limit(client, monkeypa
                     headers={"X-Forwarded-For": f"10.0.0.{i}, 203.0.113.9"})
     response = client.post("/api/chat", json={"session_id": "session-1234", "message": "oi"},
                            headers={"X-Forwarded-For": "10.9.9.9, 203.0.113.9"})
-    assert events(response)[-1]["text"] == web.BUSY_MESSAGE
+    assert events(response)[-1]["text"] == web.BUSY_MESSAGE["pt"]
 
 
 def test_daily_budget_stops_the_model(client, monkeypatch):
     monkeypatch.setattr(db, "spent_today", lambda: config.DAILY_BUDGET_USD)
     monkeypatch.setattr(llm, "complete", lambda *_: pytest.fail("model must not be called"))
-    assert events(post(client))[-1]["text"] == web.BUSY_MESSAGE
+    assert events(post(client))[-1]["text"] == web.BUSY_MESSAGE["pt"]
 
 
 def test_provider_failure_reaches_the_customer_as_a_way_out(client, monkeypatch):
@@ -76,7 +76,7 @@ def test_provider_failure_reaches_the_customer_as_a_way_out(client, monkeypatch)
         raise TimeoutError("provider down")
 
     monkeypatch.setattr(llm, "complete", broken)
-    assert events(post(client, session="session-broken"))[-1]["text"] == web.ERROR_MESSAGE
+    assert events(post(client, session="session-broken"))[-1]["text"] == web.ERROR_MESSAGE["pt"]
 
 
 def test_spend_is_recorded_per_day(client):

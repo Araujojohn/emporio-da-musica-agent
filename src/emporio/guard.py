@@ -16,7 +16,9 @@ SMALL_NUMBER = 12  # "3 opções", "12x": too common to verify and harmless alon
 
 
 def _value(text: str) -> float:
-    """Reads Brazilian format: "1.967,18" → 1967.18 · "1.200" → 1200 · "599.9" → 599.9."""
+    """Reads both formats: "1.967,18" and "1,967.18" → 1967.18 · "1.200" and "1,200" → 1200 · "599.9" → 599.9."""
+    if re.fullmatch(r"\d{1,3}(,\d{3})+(\.\d+)?", text):
+        return float(text.replace(",", ""))
     if "," in text:
         return float(text.replace(".", "").replace(",", "."))
     if re.fullmatch(r"\d{1,3}(\.\d{3})+", text):

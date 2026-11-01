@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "I'll check your order right away.",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_sI1DpwoC7qmFKTn98FdP4888",
+    "type": "function",
+    "function": {
+     "name": "get_order",
+     "arguments": "{\"order_id\": 8, \"contact\": \"(67) 99654-7821\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1887,
+  "completion_tokens": 69,
+  "total_tokens": 1956,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 223
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1240
+}

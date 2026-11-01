@@ -18,6 +18,7 @@ class Case:
     forbidden_tools: list[str] = field(default_factory=list)
     arguments: dict = field(default_factory=dict)      # {tool: {argument: value}}
     now: str | None = None
+    language: str = "pt"                               # interface language
 
 
 @dataclass
@@ -37,7 +38,7 @@ def run_case(case: Case) -> Run:
         thread = f"eval-{case.id}"
         replies, calls, outputs, stats = [], [], [], []
         for turn in case.turns:
-            for event in stream_turn(graph, thread, turn):
+            for event in stream_turn(graph, thread, turn, language=case.language):
                 if event["type"] == "tool_start":
                     calls.append((event["name"], json.loads(event["arguments"] or "{}")))
                 elif event["type"] == "tool_end":

@@ -2,18 +2,18 @@
 
 A text agent for a fictional musical instrument store in Campo Grande, Brazil. It answers about products, orders, returns and store policies, and it shows its work: the interface displays every lookup, every check and the cost of each reply.
 
-**Live demo:** https://emporio-da-musica.artace.app (the "Bastidores" panel is the behind-the-scenes view)
+**Live demo:** https://emporio-da-musica.artace.app (Portuguese by default, with a button that switches everything to English; the side panel shows the behind-the-scenes view and can be resized or hidden)
 
 | Measured on 2026-11-01 | Result |
 |---|---|
-| Behavior evals, rules that must not break | 38 of 38 |
+| Behavior evals, rules that must not break | 41 of 41 |
 | Performance evals, slang and typos | 36 of 36 |
 | Policy retrieval, 32 questions, right section in the top 3 | 100% (first position 81%) |
 | Deliberately broken code caught by the free tests | 16 of 16 (`reports/mutations.json`) |
 | Cost per reply | about US$ 0.0004 |
 | Median model time per reply | 2.7 s |
 
-These evals are regression tests. I wrote the cases, and the first run passed 31 of 36 before the fixes below, so 38 of 38 proves that known behaviors hold. It is not an accuracy estimate for real customers.
+These evals are regression tests. I wrote the cases, and the first run passed 31 of 36 before the fixes below, so 41 of 41 proves that known behaviors hold. It is not an accuracy estimate for real customers.
 
 ## Run it
 
@@ -134,7 +134,7 @@ I read every CSV row and every page of the manual. Findings are in [docs/data-au
 - Only 4 of 25 promotions are active. The Takamine GD20 from the suggested scenarios has an expired one.
 - The sales channel and delivery date do not exist in the data. An order with a tracking code counts as remote, and the receipt date comes from the customer or from `estimated_delivery`, flagged as an estimate.
 - The newest order is from March 2026, so order age uses `DATA_AS_OF = 2026-03-25`, while opening hours use the real clock.
-- Docs and code are in English as the process requested. The agent speaks Portuguese, or the customer's language, because the store is Brazilian.
+- Docs and code are in English as the process requested. The interface opens in Portuguese because the store's customers are Brazilian, with a button for English, and the agent always follows the language of the customer's last message.
 
 ## Known limitations
 

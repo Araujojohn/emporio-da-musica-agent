@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Here are the acoustic guitars we have up to R$ 1000, all in stock:\n\n- Tagima Memphis AC-39 Nylon Natural, R$ 429,90 (R$ 408,40 on PIX), 5x interest free\n- Rozini RC-104 Nylon Estudante, R$ 459,90 (R$ 436,90 on PIX), 5x interest free\n- Shelby SN-100 Folk Aço Preto, R$ 549,00 (R$ 521,55 on PIX), 6x interest free\n- Giannini GF-1R Aço Folk Sunburst, R$ 579,90 (R$ 550,90 on PIX), 6x interest free\n- Yamaha C40 Nylon Natural, R$ 599,90 (R$ 569,90 on PIX), 6x interest free\n- Giannini GN-15 Nylon Cedr Natural, R$ 689,00 (R$ 654,55 on PIX), 6x interest free\n- Yamaha F310 Aço Natural, R$ 699,90 (R$ 664,90 on PIX), 6x interest free\n- Tagima Dallas Tuner Aço Natural, R$ 749,00 (R$ 711,55 on PIX), 7x interest free\n- Shelby SGD-195E Elétrico Aço Sunburst, R$ 799,00 (R$ 759,05 on PIX), 7x interest free\n- Yamaha C70 Nylon Natural, R$ 849,00 (R$ 806,55 on PIX), 8x interest free\n- Tagima Woodstock Dreadnought Natural, R$ 899,00 (R$ 854,05 on PIX), 8x interest free\n- Tagima TW-7 7 Cordas Aço Natural, R$ 999,00 (R$ 949,05 on PIX), 9x interest free\n\nQuick tip: nylon strings are softer on the fingers and great for classical or beginner study, while steel strings give that brighter folk sound for singing along. Want me to help you pick between them?"
+ },
+ "usage": {
+  "prompt_tokens": 3997,
+  "completion_tokens": 470,
+  "total_tokens": 4467,
+  "prompt_tokens_details": {
+   "cached_tokens": 3840
+  },
+  "prompt_cache_hit_tokens": 3840,
+  "prompt_cache_miss_tokens": 157
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 2770
+}

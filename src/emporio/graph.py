@@ -18,8 +18,11 @@ from langgraph.graph import END, START, StateGraph
 from . import config, db, guard, llm, rules, tools
 
 SYSTEM_PROMPT = (Path(__file__).parent / "prompts" / "system.md").read_text(encoding="utf-8")
-CUT_NOTICE = "Prefiro confirmar esse detalhe com a equipe para não te passar nada errado."
-EMPTY_REPLY = "Desculpa, não consegui responder agora. Pode tentar de novo? Se preferir, fale com a equipe pelo (67) 3341-4444."
+CUT_NOTICE = {"pt": "Prefiro confirmar esse detalhe com a equipe para não te passar nada errado.",
+              "en": "I'd rather confirm that detail with the team so I don't give you anything wrong."}
+EMPTY_REPLY = {"pt": "Desculpa, não consegui responder agora. Pode tentar de novo? Se preferir, fale com a equipe pelo (67) 3341-4444.",
+               "en": "Sorry, I couldn't answer just now. Could you try again? You can also call the team at (67) 3341-4444."}
+ENGLISH_NOTE = "Reply in English, translating what the tools returned. Keep product names as they are; a violão is an acoustic guitar."
 RETRY_NOTE = ("Revisão interna: estes dados da sua resposta não vieram de nenhuma ferramenta desta rodada: {items}. "
               "Consulte a ferramenta certa ou reescreva sem eles.")
 
@@ -31,6 +34,7 @@ class State(TypedDict, total=False):
     retried: bool
     ctx: dict
     stats: dict
+    language: str  # of the interface: fixed texts only, the model follows the customer's own language
 
 
 def _for_model(message: dict) -> dict:
@@ -44,8 +48,11 @@ def build_request(state: State) -> list[dict]:
     history = [m for m in messages[:start] if m["role"] == "user" or m.get("final")][-config.HISTORY_MESSAGES:]
     catalog = ", ".join(tools.store().categories_in_stock())
     clock = {"role": "system", "content": f"{rules.store_status(config.now())} Só há produtos à venda em: {catalog}."}
-    return [{"role": "system", "content": SYSTEM_PROMPT}, *map(_for_model, history), clock,
-            *map(_for_model, messages[start:])]
+    request = [{"role": "system", "content": SYSTEM_PROMPT}, *map(_for_model, history), clock,
+               *map(_for_model, messages[start:])]
+    if state.get("language") == "en":  # last on purpose: tool results in Portuguese pulled the reply back to Portuguese
+        request.append({"role": "system", "content": ENGLISH_NOTE})
+    return request
 
 
 def begin(state: State) -> dict:
@@ -105,14 +112,14 @@ def check(state: State) -> dict:
     problems = guard.unverified(reply, evidence(state))
     if not problems:
         write({"type": "guard", "status": "ok"})
-        return {"messages": [{"role": "assistant", "content": reply or EMPTY_REPLY, "final": True}]}
+        return {"messages": [{"role": "assistant", "content": reply or EMPTY_REPLY[state["language"]], "final": True}]}
     if not state["retried"]:
         write({"type": "guard", "status": "retry", "items": problems})
         note = RETRY_NOTE.format(items=", ".join(problems))
         return {"messages": [{"role": "system", "content": note}], "retried": True}
     write({"type": "guard", "status": "cut", "items": problems})
     remaining = guard.cut_sentences(reply, problems)
-    final = f"{remaining}\n\n{CUT_NOTICE}".strip()
+    final = f"{remaining}\n\n{CUT_NOTICE[state['language']]}".strip()
     return {"messages": [{"role": "assistant", "content": final, "final": True}]}
 
 
@@ -142,11 +149,11 @@ def memory_graph():
     return build(MemorySaver())
 
 
-def stream_turn(graph, thread_id: str, text: str, history: list[dict] | None = None) -> Iterator[dict]:
+def stream_turn(graph, thread_id: str, text: str, history: list[dict] | None = None, language: str = "pt") -> Iterator[dict]:
     """Runs one customer message, yielding each step as it happens and then the `final` event."""
     conversation = {"configurable": {"thread_id": thread_id}}
     known = graph.get_state(conversation).values.get("ctx") or {"thread_id": thread_id}
-    turn = {"messages": [*(history or []), {"role": "user", "content": text}], "ctx": known}
+    turn = {"messages": [*(history or []), {"role": "user", "content": text}], "ctx": known, "language": language}
     started = time.perf_counter()
     yield from graph.stream(turn, conversation, stream_mode="custom")
     state = graph.get_state(conversation).values
