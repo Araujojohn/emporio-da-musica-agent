@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Deixa eu confirmar direitinho pra você.",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_7SxJPRNSuG3u29fE26Ic2175",
+    "type": "function",
+    "function": {
+     "name": "simulate_payment",
+     "arguments": "{\"amount\": 599.9}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1957,
+  "completion_tokens": 51,
+  "total_tokens": 2008,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 165
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1307
+}

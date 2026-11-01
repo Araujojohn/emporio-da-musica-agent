@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Pedro, achei seu pedido 19 aqui. Ele foi cancelado porque o pagamento do boleto não foi confirmado dentro do prazo. O pedido era de um Violão Taylor 214ce Elétrico Aço Natural, no valor de R$ 7.499,00.\n\nSe quiser, posso verificar se esse modelo ainda está disponível pra você fazer um novo pedido. Quer que eu confira?"
+ },
+ "usage": {
+  "prompt_tokens": 2048,
+  "completion_tokens": 94,
+  "total_tokens": 2142,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 256
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1531
+}

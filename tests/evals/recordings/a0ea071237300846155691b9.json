@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Temos 2 unidades da Gibson Les Paul Standard '50s, na categoria Guitarras. Ela sai por R$ 18.900,00, ou R$ 17.955,00 no PIX, e dá pra parcelar em até 12x sem juros. É Heritage Cherry Sunburst, corpo e braço em mogno, com captadores Burstbucker.\n\nQuer saber mais alguma coisa sobre ela?"
+ },
+ "usage": {
+  "prompt_tokens": 2074,
+  "completion_tokens": 93,
+  "total_tokens": 2167,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 282
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1550
+}

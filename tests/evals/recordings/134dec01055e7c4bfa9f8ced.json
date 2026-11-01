@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "O Yamaha F310 Aço Natural (Violões) sai por R$ 699,90, e dá pra parcelar em até 6x sem juros de R$ 116,65. No PIX fica R$ 664,90, com 5% de desconto. Ele tem 14 unidades em estoque.\n\nPrecisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2309,
+  "completion_tokens": 80,
+  "total_tokens": 2389,
+  "prompt_tokens_details": {
+   "cached_tokens": 2048
+  },
+  "prompt_cache_hit_tokens": 2048,
+  "prompt_cache_miss_tokens": 261
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1590
+}

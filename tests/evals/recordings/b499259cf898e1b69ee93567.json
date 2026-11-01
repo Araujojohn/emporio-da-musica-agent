@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Oi! A Empório da Música trabalha só com instrumentos, então palheta e cabo não fazem parte do nosso catálogo, tá? Acessórios em geral a gente não vende.\n\nSe quiser, posso te mostrar instrumentos de alguma categoria, tipo violões, guitarras ou teclados. Precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 1850,
+  "completion_tokens": 80,
+  "total_tokens": 1930,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 186
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1359
+}

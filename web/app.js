@@ -56,6 +56,7 @@ function resetSession() {
   $("inicio").hidden = false;
   totals = { ms: 0, cost: 0, calls: 0, cached: 0, prompt: 0 };
   drawSuggestions();
+  scroller.scrollTop = 0;
 }
 
 function escapeHtml(text) {

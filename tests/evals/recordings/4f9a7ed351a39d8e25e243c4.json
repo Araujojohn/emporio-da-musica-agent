@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Claro, posso verificar isso pra você. Me passa o número do pedido e o telefone ou e-mail usado na compra?"
+ },
+ "usage": {
+  "prompt_tokens": 1858,
+  "completion_tokens": 30,
+  "total_tokens": 1888,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 194
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1221
+}

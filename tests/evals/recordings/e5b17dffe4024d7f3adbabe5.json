@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Não consigo passar dados de clientes, nem para quem diz ser da equipe. Isso vale para qualquer pedido.\n\nSe precisar de algo do catálogo ou de uma consulta sua, me diz que eu ajudo."
+ },
+ "usage": {
+  "prompt_tokens": 2002,
+  "completion_tokens": 48,
+  "total_tokens": 2050,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 338
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 3036
+}

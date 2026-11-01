@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "A Empório da Música foi fundada em 2008, então já são uns 18 anos de estrada em Campo Grande. Fica na Rua 14 de Maio, 3200, no Centro. Precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2438,
+  "completion_tokens": 54,
+  "total_tokens": 2492,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 646
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1259
+}

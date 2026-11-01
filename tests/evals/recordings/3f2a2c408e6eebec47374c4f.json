@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Vou te ajudar com isso. Só um instante, deixa eu verificar a política de privacidade da loja.",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_I19sTX17O3dpKcjCm3qS5471",
+    "type": "function",
+    "function": {
+     "name": "search_policies",
+     "arguments": "{\"query\": \"privacidade exclusão de dados pessoais\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1850,
+  "completion_tokens": 73,
+  "total_tokens": 1923,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 186
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1270
+}

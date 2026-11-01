@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Opa, aí eu não consigo ajudar, só dou uma mão com a Empório da Música mesmo. Mas se a ideia for um script pra tocar, posso te mostrar opções de instrumentos por aqui. Quer ver algum?"
+ },
+ "usage": {
+  "prompt_tokens": 1849,
+  "completion_tokens": 54,
+  "total_tokens": 1903,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 185
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1844
+}

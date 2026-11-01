@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Thiago, verifiquei aqui o pedido 2, o Violão Taylor 110e Dreadnought Natural. Pela regra de arrependimento da loja (§4.1), o prazo de 7 dias já passou: a data de recebimento que tenho é 15/11/2025, então o limite seria 22/11/2025.\n\nSó que essa data de recebimento é uma estimativa nossa. Você lembra em que dia recebeu o violão? Se foi depois disso, me fala que eu reavalio. E se o caso for outro, tipo defeito, também me conta que eu verifico."
+ },
+ "usage": {
+  "prompt_tokens": 2113,
+  "completion_tokens": 146,
+  "total_tokens": 2259,
+  "prompt_tokens_details": {
+   "cached_tokens": 1920
+  },
+  "prompt_cache_hit_tokens": 1920,
+  "prompt_cache_miss_tokens": 193
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1751
+}

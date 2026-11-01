@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Tem sim! No PIX é 5% de desconto sobre o preço de tabela, pagamento à vista. Só uma observação: esse desconto não se acumula com preços que já estão em promoção.\n\nNo cartão de crédito dá pra parcelar em até 12x sem juros, com parcela mínima de R$ 100.\n\nQuer que eu calcule o valor no PIX de algum instrumento que você tá de olho?"
+ },
+ "usage": {
+  "prompt_tokens": 2242,
+  "completion_tokens": 102,
+  "total_tokens": 2344,
+  "prompt_tokens_details": {
+   "cached_tokens": 1920
+  },
+  "prompt_cache_hit_tokens": 1920,
+  "prompt_cache_miss_tokens": 322
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1534
+}

@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Nosso atendimento, na loja e pelo WhatsApp, funciona de segunda a sexta das 9h às 18h, e no sábado das 9h às 13h. Domingo e feriados a gente fecha. Hoje é quarta, então estamos abertos até as 18h. Precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2418,
+  "completion_tokens": 75,
+  "total_tokens": 2493,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 626
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1432
+}

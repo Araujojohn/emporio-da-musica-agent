@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa, mas essa eu vou ficar devendo: aqui eu só ajudo com a Empório da Música, instrumentos e pedidos. Quer dar uma olhada em algum instrumento ou tirar dúvida sobre um pedido?"
+ },
+ "usage": {
+  "prompt_tokens": 1847,
+  "completion_tokens": 53,
+  "total_tokens": 1900,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 183
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1211
+}

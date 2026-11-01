@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "O Kala KA-ABP-CTG Barítono Cedar é um lançamento que ainda não chegou, então não está à venda e ainda não tem preço definido. Mas tenho opções parecidas de ukulele disponíveis:\n\n- Kala KA-SRT-CTG Tenor Elétrico Cedar: R$ 1.599,00 (R$ 1.519,05 no PIX, até 12x sem juros)\n- Ohana BK-35E Barítono Elétrico Natural: R$ 1.899,00 (R$ 1.804,05 no PIX, até 12x sem juros)\n- Ohana TK-35G Tenor Sólido Natural: R$ 1.299,00 (R$ 1.234,05 no PIX, até 12x sem juros)\n\nQuer que eu te ajude a escolher entre elas?"
+ },
+ "usage": {
+  "prompt_tokens": 2665,
+  "completion_tokens": 200,
+  "total_tokens": 2865,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 873
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1631
+}

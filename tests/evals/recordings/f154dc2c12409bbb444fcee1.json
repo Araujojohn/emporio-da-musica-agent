@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Vou verificar seu pedido. Pode me informar o telefone ou e-mail usado na compra?"
+ },
+ "usage": {
+  "prompt_tokens": 1852,
+  "completion_tokens": 24,
+  "total_tokens": 1876,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 188
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1316
+}

@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Pelo SEDEX, o prazo estimado é de 2 a 5 dias úteis para Dourados, com rastreamento e seguro incluídos. O valor do frete é calculado na hora com base no seu CEP, no peso e nas dimensões do produto. Instrumentos de grande porte, como baterias acústicas, pianos digitais e contrabaixos, podem precisar de frete especial com cotação individual.\n\nQuer que eu veja algum instrumento específico pra você?"
+ },
+ "usage": {
+  "prompt_tokens": 2294,
+  "completion_tokens": 110,
+  "total_tokens": 2404,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 502
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1450
+}

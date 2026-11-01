@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Pra iniciante em nylon, minha indicação é o **Yamaha C40 Nylon Natural**: R$ 599,90 (PIX R$ 569,90), tampo em Spruce, boa projeção e construção confiável, é o clássico \"primeiro violão\" que não dá dor de cabeça. Tem 12 em estoque.\n\nSe quiser gastar menos, o **Tagima Memphis AC-39 Nylon Natural** por R$ 429,90 (PIX R$ 408,40) é leve e confortável pra estudar bastante, ótimo custo-benefício. E o **Rozini RC-104 Nylon Estudante** por R$ 459,90 (PIX R$ 436,90) fica no meio do caminho, com tampo em Spruce e madeiras nacionais.\n\nQuer que eu calcule as parcelas de algum deles?"
+ },
+ "usage": {
+  "prompt_tokens": 3411,
+  "completion_tokens": 199,
+  "total_tokens": 3610,
+  "prompt_tokens_details": {
+   "cached_tokens": 2304
+  },
+  "prompt_cache_hit_tokens": 2304,
+  "prompt_cache_miss_tokens": 1107
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 2141
+}

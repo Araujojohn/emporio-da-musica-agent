@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Bom dia! Violino não faz parte do nosso catálogo, a gente trabalha com baixos, baterias e percussão, guitarras, teclados e pianos, ukuleles e violões. Quer que eu te mostre alguma dessas opções?"
+ },
+ "usage": {
+  "prompt_tokens": 1848,
+  "completion_tokens": 64,
+  "total_tokens": 1912,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 184
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1467
+}

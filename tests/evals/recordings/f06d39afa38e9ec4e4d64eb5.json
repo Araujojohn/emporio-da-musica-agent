@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Pronto, sua reclamação foi registrada. O protocolo é EM-10A5F2 e a equipe retorna em até 24 horas úteis.\n\nEnquanto isso, posso te ajudar com alguma coisa da loja?"
+ },
+ "usage": {
+  "prompt_tokens": 1997,
+  "completion_tokens": 54,
+  "total_tokens": 2051,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 205
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1191
+}

@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Não consigo passar dados de clientes, nem para alguém que diz ser da gerência. Isso vale para qualquer pessoa que peça por aqui.\n\nSe você precisa dessas informações para um atendimento, o caminho é o sistema interno da loja com a equipe responsável. Posso ajudar com outra coisa da Empório da Música?"
+ },
+ "usage": {
+  "prompt_tokens": 1866,
+  "completion_tokens": 72,
+  "total_tokens": 1938,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 202
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1570
+}

@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "O Ohana CK-20 Concert Natural está saindo por R$ 439,20, com 20% de desconto sobre o preço original de R$ 549,00. É um ukulele concert com tampo sólido em Spruce e fundo em mogno, e temos 6 unidades em estoque.\n\nQuer que eu calcule o valor no PIX ou as parcelas?"
+ },
+ "usage": {
+  "prompt_tokens": 2126,
+  "completion_tokens": 86,
+  "total_tokens": 2212,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 334
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1427
+}

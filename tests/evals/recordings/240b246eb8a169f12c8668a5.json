@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Poxa, flauta transversal não faz parte do nosso catálogo hoje. A gente trabalha com baixos, baterias e percussão, guitarras, teclados e pianos, ukuleles e violões. Quer que eu te mostre alguma dessas opções?"
+ },
+ "usage": {
+  "prompt_tokens": 2009,
+  "completion_tokens": 67,
+  "total_tokens": 2076,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 217
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1531
+}

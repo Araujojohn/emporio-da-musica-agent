@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Oi Bruno! Consultei aqui o pedido 10: ele está confirmado e em preparação, ou seja, ainda não saiu para entrega. A compra foi feita em 25/02, no PIX, com o Music Man Bass 1X Electric Bass, total de R$ 8.732,00.\n\nQuer que eu veja mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2036,
+  "completion_tokens": 82,
+  "total_tokens": 2118,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 244
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1735
+}

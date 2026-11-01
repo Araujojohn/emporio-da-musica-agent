@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "No cartão de crédito dá pra parcelar em até 6x sem juros, ficando 6 parcelas de R$ 99,98. À vista no PIX sai por R$ 569,90 com 5% de desconto, ou R$ 599,90 no débito ou boleto.\n\nQuer que eu te ajude com mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2181,
+  "completion_tokens": 82,
+  "total_tokens": 2263,
+  "prompt_tokens_details": {
+   "cached_tokens": 1920
+  },
+  "prompt_cache_hit_tokens": 1920,
+  "prompt_cache_miss_tokens": 261
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1479
+}

@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa ideia, mas desconto eu não consigo aplicar por aqui, quem negocia isso é a equipe da loja. Deixa eu ver como está o preço do Takamine GD20 hoje pra você ter a referência.",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_KcXrzsGIAOhsPPhaY2yq8236",
+    "type": "function",
+    "function": {
+     "name": "search_products",
+     "arguments": "{\"query\": \"Takamine GD20\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1859,
+  "completion_tokens": 90,
+  "total_tokens": 1949,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 195
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1387
+}

@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "O boleto compensa em até 3 dias úteis, e o pagamento é à vista. Se quiser, o PIX cai na hora e ainda dá 5% de desconto sobre o preço de tabela. Quer que eu calcule o valor de algum instrumento?"
+ },
+ "usage": {
+  "prompt_tokens": 2349,
+  "completion_tokens": 64,
+  "total_tokens": 2413,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 557
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1300
+}

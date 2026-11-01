@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_gAsSo6cMPUaox8305nTH4509",
+    "type": "function",
+    "function": {
+     "name": "get_order",
+     "arguments": "{\"order_id\": 4, \"contact\": \"lucas.mendes@jmail.com\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1860,
+  "completion_tokens": 61,
+  "total_tokens": 1921,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 196
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 981
+}

@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_NY2jNX8lbqVCnfH8KRLk6307",
+    "type": "function",
+    "function": {
+     "name": "escalate_to_human",
+     "arguments": "{\"reason\": \"late_delivery\", \"summary\": \"Cliente Ana relata que o pedido 8 (ukulele Kala KA-C Concert Mogno, enviado, previsão 28/02/2026) não chegou até hoje, 25/03/2026. Pedido em atraso, rastreio BRJL5544332BR.\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 2066,
+  "completion_tokens": 126,
+  "total_tokens": 2192,
+  "prompt_tokens_details": {
+   "cached_tokens": 1920
+  },
+  "prompt_cache_hit_tokens": 1920,
+  "prompt_cache_miss_tokens": 146
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1593
+}

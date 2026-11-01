@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Oi, Letícia! Verifiquei aqui o pedido 7, o ukulele Shelby SU-21S Soprano Sunburst. Como a compra passou do prazo de 30 dias da troca em loja, mas ainda está dentro da garantia legal de 90 dias, quem cuida desse caso é a nossa equipe.\n\nJá encaminhei pra eles, o protocolo é EM-CB1F10 e o retorno sai em até 24 horas úteis. Se puder confirmar a data em que você recebeu o ukulele, ajuda a agilizar o atendimento.\n\nPrecisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2509,
+  "completion_tokens": 142,
+  "total_tokens": 2651,
+  "prompt_tokens_details": {
+   "cached_tokens": 2304
+  },
+  "prompt_cache_hit_tokens": 2304,
+  "prompt_cache_miss_tokens": 205
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1569
+}

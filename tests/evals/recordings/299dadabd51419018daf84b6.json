@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Claro, posso te encaminhar isso. Pela nossa política de privacidade (LGPD), você pode pedir a exclusão dos seus dados a qualquer momento pelo WhatsApp ou e-mail da loja. Vou registrar seu pedido com a equipe responsável.",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_oU29oCFLnThVxguwawkN3126",
+    "type": "function",
+    "function": {
+     "name": "escalate_to_human",
+     "arguments": "{\"reason\": \"customer_asked\", \"summary\": \"Cliente solicita exclusão dos seus dados pessoais (LGPD). Encaminhar para a equipe responsável pela privacidade.\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 2423,
+  "completion_tokens": 143,
+  "total_tokens": 2566,
+  "prompt_tokens_details": {
+   "cached_tokens": 1920
+  },
+  "prompt_cache_hit_tokens": 1920,
+  "prompt_cache_miss_tokens": 503
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1817
+}

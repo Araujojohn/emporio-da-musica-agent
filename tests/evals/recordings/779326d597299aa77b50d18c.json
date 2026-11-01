@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "No PIX o Yamaha C40 Nylon Natural fica em R$ 569,90, com desconto sobre o preço de R$ 599,90. Quer que eu veja mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 1956,
+  "completion_tokens": 47,
+  "total_tokens": 2003,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 420
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1412
+}

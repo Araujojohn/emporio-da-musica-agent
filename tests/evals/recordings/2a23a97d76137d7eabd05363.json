@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_8WiLd8whHuSmsYErEBeS7390",
+    "type": "function",
+    "function": {
+     "name": "search_products",
+     "arguments": "{\"query\": \"bateria Yamaha kit 1\", \"category\": \"Baterias e Percussão\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1855,
+  "completion_tokens": 67,
+  "total_tokens": 1922,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 191
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1352
+}

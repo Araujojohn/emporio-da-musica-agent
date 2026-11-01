@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Pode sim! Na Empório da Música você pode combinar PIX com cartão em compras acima de R$ 2.000, então os R$ 2.500 se encaixam.\n\nSó um detalhe: o desconto de 5% do PIX vale sobre a parte paga à vista no PIX. No cartão de crédito dá pra parcelar em até 12x sem juros, respeitando a parcela mínima de R$ 100 (de 4x a 6x a mínima é R$ 80).\n\nQuer que eu simule como fica esse valor no PIX e nas parcelas?"
+ },
+ "usage": {
+  "prompt_tokens": 2381,
+  "completion_tokens": 142,
+  "total_tokens": 2523,
+  "prompt_tokens_details": {
+   "cached_tokens": 1920
+  },
+  "prompt_cache_hit_tokens": 1920,
+  "prompt_cache_miss_tokens": 461
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1823
+}

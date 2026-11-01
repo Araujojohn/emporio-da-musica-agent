@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_p353QPbwOhcmFgSB85eF0910",
+    "type": "function",
+    "function": {
+     "name": "escalate_to_human",
+     "arguments": "{\"reason\": \"return_needs_person\", \"summary\": \"Cliente relata ukulele Shelby SU-21S Soprano Sunburst (pedido 7) com defeito. Fora do prazo de 30 dias da troca de loja, mas dentro da garantia legal de 90 dias. Precisa de atendimento da equipe.\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 2351,
+  "completion_tokens": 121,
+  "total_tokens": 2472,
+  "prompt_tokens_details": {
+   "cached_tokens": 1920
+  },
+  "prompt_cache_hit_tokens": 1920,
+  "prompt_cache_miss_tokens": 431
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1197
+}

@@ -7,6 +7,8 @@ mistakes in this domain: wrong price, wrong deadline and phone numbers or e-mail
 import re
 
 _NUMBER = re.compile(r"\d+(?:[.,]\d+)*")
+# Model names are not quantities: the 40 in "Yamaha C40" or the 15 in "KA-15S" stays out. "24x" stays in.
+_FIGURE = re.compile(r"(?<![\w])(?<![A-Za-z]-)\d+(?:[.,]\d+)*(?![a-wyzA-WYZ\d])")
 _EMAIL = re.compile(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+")
 _SENTENCE_END = re.compile(r"(?<=[.!?])\s+|\n+")
 _PLACEHOLDER = re.compile(r"\[[^\]\d]{2,20}\]|\{[^}]{2,20}\}")  # "[nome]", seen in the first live test
@@ -36,7 +38,7 @@ def unverified(reply: str, evidence: str) -> list[str]:
     """Numbers, e-mails and unfilled placeholders in the reply that nothing in the evidence supports."""
     sources = _sources(evidence)
     clean = _EMAIL.sub(" ", reply)
-    numbers = [t for t in _NUMBER.findall(clean) if not _is_supported(_value(t), sources)]
+    numbers = [t for t in _FIGURE.findall(clean) if not _is_supported(_value(t), sources)]
     emails = [e for e in _EMAIL.findall(reply) if e.lower() not in evidence.lower()]
     return numbers + emails + _PLACEHOLDER.findall(reply)
 

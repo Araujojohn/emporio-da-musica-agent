@@ -26,6 +26,16 @@ def test_unsupported_data_is_caught(reply, problem):
     assert problem in guard.unverified(reply, EVIDENCE)
 
 
+@pytest.mark.parametrize("reply", ["O Yamaha C40 é ótimo.", "Temos o Kala KA-15S e o GF-3D.", "O Takamine GD20 chegou."])
+def test_product_model_names_are_not_quantities(reply):
+    assert guard.unverified(reply, "") == []
+
+
+@pytest.mark.parametrize("reply", ["Em 24x sem juros.", "Ligue 3321-4500.", "R$ 40,00 por mês."])
+def test_real_figures_still_need_a_source(reply):
+    assert guard.unverified(reply, "") != []
+
+
 def test_number_from_the_customers_own_message_is_allowed():
     assert guard.unverified("Pedido 4821 anotado.", "cadê meu pedido 4821?") == []
 

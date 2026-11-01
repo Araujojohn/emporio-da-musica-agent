@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa, Thiago, com a data de 20/03/2026 a devolução está dentro do prazo. Você tem até 27/03/2026 pra concluir.\n\nAs condições são: o violão precisa estar sem uso, na embalagem original, com todos os acessórios e manuais. O reembolso é pelo mesmo meio de pagamento em até 10 dias úteis, e a loja paga o frete da devolução.\n\nSó preciso confirmar duas coisas: o violão não é personalizado e não é item de liquidação final, certo? E me confirma também que ele está sem uso e completo. Assim eu já encaminho pra equipe abrir o processo."
+ },
+ "usage": {
+  "prompt_tokens": 2418,
+  "completion_tokens": 157,
+  "total_tokens": 2575,
+  "prompt_tokens_details": {
+   "cached_tokens": 2176
+  },
+  "prompt_cache_hit_tokens": 2176,
+  "prompt_cache_miss_tokens": 242
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1808
+}

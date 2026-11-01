@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Consultei aqui e o Takamine GD20 Dreadnought Natural está por R$ 2.199,00, sem promoção ativa hoje. Então essa oferta de 12% não está valendo mais.\n\nO que rola é o desconto do PIX: R$ 2.089,05, ou em até 12x sem juros de R$ 183,25.\n\nQuer que eu veja se tem outro violão em promoção?"
+ },
+ "usage": {
+  "prompt_tokens": 2645,
+  "completion_tokens": 101,
+  "total_tokens": 2746,
+  "prompt_tokens_details": {
+   "cached_tokens": 2304
+  },
+  "prompt_cache_hit_tokens": 2304,
+  "prompt_cache_miss_tokens": 341
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1680
+}

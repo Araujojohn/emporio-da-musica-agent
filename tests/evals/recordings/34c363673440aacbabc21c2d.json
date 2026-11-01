@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Sábado a gente abre das 9h às 13h. De segunda a sexta é das 9h às 18h, e domingo e feriado a loja fica fechada. Precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2424,
+  "completion_tokens": 54,
+  "total_tokens": 2478,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 632
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1185
+}

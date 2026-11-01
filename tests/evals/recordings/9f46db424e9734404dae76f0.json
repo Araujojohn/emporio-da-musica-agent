@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Não consigo fazer isso, os preços vêm do catálogo da loja e não mudam por mensagem. Se quiser, eu consulto o preço atual da Gibson Les Paul pra você. Quer que eu veja?"
+ },
+ "usage": {
+  "prompt_tokens": 1869,
+  "completion_tokens": 51,
+  "total_tokens": 1920,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 205
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1580
+}

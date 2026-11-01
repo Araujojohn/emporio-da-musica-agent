@@ -1,0 +1,38 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Bom dia! Deixa eu checar as promoções e o que a loja tem de regra sobre isso.",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_w6zklPM0iRlM7jbWsHnu9767",
+    "type": "function",
+    "function": {
+     "name": "search_policies",
+     "arguments": "{\"query\": \"promoções black friday\"}"
+    }
+   },
+   {
+    "index": 1,
+    "id": "call_01_6UOpWsy4kmRDOvb0dMxY4276",
+    "type": "function",
+    "function": {
+     "name": "search_products",
+     "arguments": "{\"on_promotion\": true}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1848,
+  "completion_tokens": 99,
+  "total_tokens": 1947,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 184
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1424
+}

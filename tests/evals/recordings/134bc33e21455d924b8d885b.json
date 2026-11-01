@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_cQAoMDfwrhwqBHr3aQBr4159",
+    "type": "function",
+    "function": {
+     "name": "search_policies",
+     "arguments": "{\"query\": \"endereço da loja\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1850,
+  "completion_tokens": 43,
+  "total_tokens": 1893,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 186
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1102
+}

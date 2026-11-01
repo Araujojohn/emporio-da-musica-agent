@@ -1,0 +1,66 @@
+[
+ {
+  "mutation": "regret window of 8 days instead of 7",
+  "caught": true
+ },
+ {
+  "mutation": "PIX discount stacks with promotion",
+  "caught": true
+ },
+ {
+  "mutation": "installment minimums ignored",
+  "caught": true
+ },
+ {
+  "mutation": "expired promotions change the price",
+  "caught": true
+ },
+ {
+  "mutation": "browsing shows unavailable products",
+  "caught": true
+ },
+ {
+  "mutation": "coming soon sold because it has stock",
+  "caught": true
+ },
+ {
+  "mutation": "order opens with any contact",
+  "caught": true
+ },
+ {
+  "mutation": "no lock after wrong contacts",
+  "caught": true
+ },
+ {
+  "mutation": "full name reaches the model",
+  "caught": true
+ },
+ {
+  "mutation": "guard lets every number through",
+  "caught": true
+ },
+ {
+  "mutation": "guard retry removed",
+  "caught": true
+ },
+ {
+  "mutation": "old tool results stay in context",
+  "caught": true
+ },
+ {
+  "mutation": "tool loop has no cap",
+  "caught": true
+ },
+ {
+  "mutation": "rate limit disabled",
+  "caught": true
+ },
+ {
+  "mutation": "daily budget disabled",
+  "caught": true
+ },
+ {
+  "mutation": "WhatsApp conflict not annotated",
+  "caught": true
+ }
+]

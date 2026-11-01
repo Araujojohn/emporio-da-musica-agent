@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "E aí! A Fender Telecaster Player Series (Guitarras) tá saindo por R$ 5.400,00. No PIX fica R$ 5.130,00, ou dá pra parcelar em até 12x sem juros. Tem 15 unidades em estoque, na cor Butterscotch Blonde.\n\nQuer que eu calcule as parcelas ou precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2080,
+  "completion_tokens": 93,
+  "total_tokens": 2173,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 288
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1521
+}

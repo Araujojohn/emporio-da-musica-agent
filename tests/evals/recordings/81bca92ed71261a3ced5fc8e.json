@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_kNmLduYm7aMIoWrUZLdv8994",
+    "type": "function",
+    "function": {
+     "name": "simulate_payment",
+     "arguments": "{\"amount\": 2199}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 2347,
+  "completion_tokens": 40,
+  "total_tokens": 2387,
+  "prompt_tokens_details": {
+   "cached_tokens": 2176
+  },
+  "prompt_cache_hit_tokens": 2176,
+  "prompt_cache_miss_tokens": 171
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1225
+}

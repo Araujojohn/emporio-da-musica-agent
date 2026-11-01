@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_s8V7IFuRDeVl8d53D1df6078",
+    "type": "function",
+    "function": {
+     "name": "search_products",
+     "arguments": "{\"category\": \"Ukuleles\", \"max_price\": 200}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1854,
+  "completion_tokens": 57,
+  "total_tokens": 1911,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 190
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1174
+}

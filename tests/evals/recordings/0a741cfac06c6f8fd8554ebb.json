@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "O Giannini GF-3D Dreadnought Sunburst está temporariamente sem estoque, por R$ 799,90. Mas tenho boas opções parecidas de violão dreadnought:\n\n- Shelby SGD-195E Elétrico Aço Sunburst: R$ 799,00 (R$ 759,05 no PIX, até 7x sem juros), eletroacústico com captação e afinador\n- Yamaha C70 Nylon Natural: R$ 849,00 (R$ 806,55 no PIX, até 8x sem juros), cordas de nylon\n- Tagima Dallas Tuner Aço Natural: R$ 749,00 (R$ 711,55 no PIX, até 7x sem juros), com afinador integrado\n\nQuer que eu te conte mais de algum deles?"
+ },
+ "usage": {
+  "prompt_tokens": 2592,
+  "completion_tokens": 189,
+  "total_tokens": 2781,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 800
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1811
+}

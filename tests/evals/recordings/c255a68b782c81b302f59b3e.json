@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Vai sim! A Black Friday da Empório é em novembro, com descontos de 15% a 30% em todo o catálogo, e o horário pode ser estendido nesse dia. Avisamos nas redes sociais e aqui no atendimento quando a data chegar.\n\nEnquanto isso, já tem umas ofertas rolando hoje:\n- Ukulele Ohana CK-20 Concert Natural: R$ 439,20 (de R$ 549,00, 20% off)\n- Ukulele Kalani KAL-700T Tenor Natural: R$ 323,10 (de R$ 359,00, 10% off)\n- Violão Crafter HT-100 Folk Aço Natural: R$ 1.967,18 (de R$ 2.399,00, 18% off)\n- Violão Taylor 110e Dreadnought Natural: R$ 5.519,08 (de R$ 5.999,00, 8% off)\n\nQuer que eu te mostre mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 3153,
+  "completion_tokens": 232,
+  "total_tokens": 3385,
+  "prompt_tokens_details": {
+   "cached_tokens": 1920
+  },
+  "prompt_cache_hit_tokens": 1920,
+  "prompt_cache_miss_tokens": 1233
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1845
+}

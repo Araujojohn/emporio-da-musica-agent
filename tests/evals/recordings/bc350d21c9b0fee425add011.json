@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa pergunta! Deixa eu confirmar as formas de pagamento da loja pra te responder certinho.",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_PEdbbKqEb8NLASwKgdmt0318",
+    "type": "function",
+    "function": {
+     "name": "search_policies",
+     "arguments": "{\"query\": \"formas de pagamento PIX cartão parcelamento\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1858,
+  "completion_tokens": 71,
+  "total_tokens": 1929,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 194
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1117
+}

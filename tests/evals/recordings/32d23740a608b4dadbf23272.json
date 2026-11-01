@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_SKoym2lSixd580lbi4sb4635",
+    "type": "function",
+    "function": {
+     "name": "search_products",
+     "arguments": "{\"on_promotion\": true}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1850,
+  "completion_tokens": 41,
+  "total_tokens": 1891,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 186
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1374
+}

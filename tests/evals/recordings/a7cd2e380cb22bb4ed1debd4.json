@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Não, o desconto do PIX não se acumula com preço promocional. O Crafter HT-100 Folk Aço Natural está saindo por R$ 1.967,18 no PIX, já com 18% de desconto sobre os R$ 2.399,00 originais. No cartão ele também fica R$ 1.967,18, em até 12x sem juros de R$ 163,93. Tem 3 unidades em estoque. Quer saber mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2462,
+  "completion_tokens": 116,
+  "total_tokens": 2578,
+  "prompt_tokens_details": {
+   "cached_tokens": 2176
+  },
+  "prompt_cache_hit_tokens": 2176,
+  "prompt_cache_miss_tokens": 286
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1759
+}

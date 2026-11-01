@@ -1,0 +1,15 @@
+name: tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  free-suite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync --frozen
+      # Evals run in replay: recorded answers, no API key and no cost. A new request fails instead of paying.
+      - run: uv run pytest

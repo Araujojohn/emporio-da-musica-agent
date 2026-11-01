@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Vou verificar seu pedido agora.",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_EAbXefYCVCdEHOvN5dbK8473",
+    "type": "function",
+    "function": {
+     "name": "check_return",
+     "arguments": "{\"order_id\": 2, \"contact\": \"(67) 98321-6543\", \"reason\": \"regret\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1870,
+  "completion_tokens": 87,
+  "total_tokens": 1957,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 206
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1263
+}

@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Oi! Amplificador não faz parte do nosso catálogo, a gente trabalha só com instrumentos mesmo. Mas se quiser dar uma olhada em guitarras, eu te mostro as opções que temos. Precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 1848,
+  "completion_tokens": 56,
+  "total_tokens": 1904,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 184
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1264
+}

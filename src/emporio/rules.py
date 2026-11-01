@@ -124,6 +124,7 @@ def _decision(decision: str, section: str, explanation: str, facts: dict | None 
     result = {"decision": decision, "policy_section": section, "explanation": explanation, **(facts or {})}
     if decision == "allowed":
         result["must_confirm_with_customer"] = "Not customized, not a 'final sale' item, not a mouthpiece (§4.4)."
+        result["next_step"] = "Confirmado pelo cliente, use escalate_to_human para a equipe abrir o processo."
     if decision == "needs_human":
         result["next_step"] = "Use escalate_to_human agora, sem pedir mais dados ao cliente."
     return result

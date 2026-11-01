@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Não consegui confirmar os dados desse pedido com o telefone informado. Pode conferir o número do pedido e o telefone ou e-mail usado na compra?"
+ },
+ "usage": {
+  "prompt_tokens": 1969,
+  "completion_tokens": 38,
+  "total_tokens": 2007,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 177
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1231
+}

@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Yes, we do! Here are three ukuleles under R$ 200:\n\n- Shelby SU-21S Soprano Sunburst: R$ 159,90 (R$ 151,91 no PIX), 8 in stock\n- Kalani KAL-300S Soprano Natural: R$ 179,90 (R$ 170,91 no PIX), 12 in stock\n- Kala KA-15S Soprano Mogno: R$ 199,90 (R$ 189,91 no PIX), 15 in stock\n\nAll three are soprano models, great for beginners. Want to know more about any of them?"
+ },
+ "usage": {
+  "prompt_tokens": 2450,
+  "completion_tokens": 138,
+  "total_tokens": 2588,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 658
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1744
+}

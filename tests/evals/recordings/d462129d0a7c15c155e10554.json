@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_6nBqU4Ppct4hmlJNaRAa9721",
+    "type": "function",
+    "function": {
+     "name": "search_policies",
+     "arguments": "{\"query\": \"horário de funcionamento domingo\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1848,
+  "completion_tokens": 44,
+  "total_tokens": 1892,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 184
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1405
+}

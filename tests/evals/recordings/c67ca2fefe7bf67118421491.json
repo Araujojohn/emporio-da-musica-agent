@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "O Takamine GD20 Dreadnought Natural está saindo por R$ 2.199,00. No PIX fica R$ 2.089,05, ou em até 12x sem juros. Tem 5 unidades em estoque, é um violão com tampo sólido de cedro, ótimo pra fingerstyle.\n\nQuer saber mais alguma coisa sobre ele?"
+ },
+ "usage": {
+  "prompt_tokens": 2092,
+  "completion_tokens": 86,
+  "total_tokens": 2178,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 300
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1276
+}

@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa notícia, Thiago! A troca do seu Violão Taylor 110e Dreadnought Natural está dentro do prazo, que vai até 29/03/2026.\n\nCondições: o instrumento precisa estar em perfeito estado e com a embalagem original, e a troca depende de ter a cor desejada em estoque. Se houver diferença de preço, ela é cobrada ou devolvida.\n\nSó preciso confirmar três coisas com você: o violão não é personalizado, não é item de liquidação final e não é peça de bocal (isso vale mais pra sopro, mas a regra pede a confirmação). Pode confirmar?\n\nE me conta qual cor você quer, que eu já passo pra equipe abrir o processo."
+ },
+ "usage": {
+  "prompt_tokens": 2408,
+  "completion_tokens": 175,
+  "total_tokens": 2583,
+  "prompt_tokens_details": {
+   "cached_tokens": 2176
+  },
+  "prompt_cache_hit_tokens": 2176,
+  "prompt_cache_miss_tokens": 232
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1948
+}

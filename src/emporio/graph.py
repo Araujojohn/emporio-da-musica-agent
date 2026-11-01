@@ -42,7 +42,8 @@ def build_request(state: State) -> list[dict]:
     messages = state["messages"]
     start = state["turn_start"]
     history = [m for m in messages[:start] if m["role"] == "user" or m.get("final")][-config.HISTORY_MESSAGES:]
-    clock = {"role": "system", "content": rules.store_status(config.now())}
+    catalog = ", ".join(tools.store().categories_in_stock())
+    clock = {"role": "system", "content": f"{rules.store_status(config.now())} Só há produtos à venda em: {catalog}."}
     return [{"role": "system", "content": SYSTEM_PROMPT}, *map(_for_model, history), clock,
             *map(_for_model, messages[start:])]
 

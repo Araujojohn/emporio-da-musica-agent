@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "O frete é grátis para pedidos acima de R$ 500,00 aqui na região metropolitana de Campo Grande. Abaixo disso, a taxa fixa fica em R$ 35,00, com entrega em 1 a 3 dias úteis por motoboy próprio.\n\nPrecisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2295,
+  "completion_tokens": 75,
+  "total_tokens": 2370,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 503
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1588
+}

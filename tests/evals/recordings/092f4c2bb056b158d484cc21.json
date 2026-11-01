@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Tem sim! Uma Gibson Les Paul Standard '50s, guitarra elétrica com captadores Burstbucker, corpo e braço em mogno, na cor Heritage Cherry Sunburst. Tá saindo por R$ 18.900,00, ou R$ 17.955,00 no PIX, e dá pra parcelar em até 12x sem juros. Tem 2 unidades em estoque.\n\nQuer saber mais alguma coisa sobre ela?"
+ },
+ "usage": {
+  "prompt_tokens": 2067,
+  "completion_tokens": 100,
+  "total_tokens": 2167,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 275
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1708
+}

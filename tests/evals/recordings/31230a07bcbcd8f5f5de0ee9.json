@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa pergunta! Só que acessórios como boquilha não fazem parte do nosso catálogo, a gente trabalha só com instrumentos. Então não tenho como te ajudar com essa troca por aqui.\n\nSe quiser, posso te mostrar os instrumentos de sopro que temos disponíveis. Precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 1853,
+  "completion_tokens": 77,
+  "total_tokens": 1930,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 189
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1408
+}

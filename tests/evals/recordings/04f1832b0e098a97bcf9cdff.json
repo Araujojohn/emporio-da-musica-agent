@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Oi Lucas, tudo bem? Seu pedido 4 está como entregue. Foi um Violão Giannini GF-3D Dreadnought Sunburst, no valor de R$ 799,90, pago por boleto, com entrega prevista para 22/12/2025 e código de rastreio BRQM7890123BR.\n\nPrecisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2066,
+  "completion_tokens": 88,
+  "total_tokens": 2154,
+  "prompt_tokens_details": {
+   "cached_tokens": 1920
+  },
+  "prompt_cache_hit_tokens": 1920,
+  "prompt_cache_miss_tokens": 146
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1407
+}

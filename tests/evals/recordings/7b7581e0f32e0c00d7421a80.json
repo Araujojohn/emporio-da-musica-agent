@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_s27vW95WpLWcwgOt5Vzs6107",
+    "type": "function",
+    "function": {
+     "name": "search_policies",
+     "arguments": "{\"query\": \"WhatsApp contato telefone\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1848,
+  "completion_tokens": 43,
+  "total_tokens": 1891,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 184
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1310
+}

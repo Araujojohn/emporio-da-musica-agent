@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "O Shelby SN-7C 7 Cordas Nylon Natural infelizmente foi descontinuado, não faz mais parte do nosso catálogo. Mas tenho algumas opções de violão que podem te interessar:\n\n- Tagima Dallas Tuner Aço Natural: R$ 749,00 (R$ 711,55 no PIX)\n- Yamaha F310 Aço Natural: R$ 699,90 (R$ 664,90 no PIX)\n- Shelby SGD-195E Elétrico Aço Sunburst: R$ 799,00 (R$ 759,05 no PIX)\n\nQuer que eu te ajude a escolher entre elas?"
+ },
+ "usage": {
+  "prompt_tokens": 2590,
+  "completion_tokens": 144,
+  "total_tokens": 2734,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 798
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1707
+}

@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Todo produto tem garantia legal de 90 dias contra defeito de fabricação, contados a partir do recebimento. Além disso, a maioria dos fabricantes dá garantia própria de 6 meses a 2 anos, e o prazo exato vem no certificado que acompanha o produto.\n\nQuer saber a garantia de algum instrumento específico?"
+ },
+ "usage": {
+  "prompt_tokens": 2075,
+  "completion_tokens": 76,
+  "total_tokens": 2151,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 283
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1353
+}

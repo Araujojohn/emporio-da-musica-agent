@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Tem sim, e são 4 ofertas rolando hoje:\n\n- Ukulele tenor Kalani KAL-700T Natural: de R$ 359,00 por R$ 323,10 (10% off), 11 em estoque\n- Ukulele concert Ohana CK-20 Concert Natural: de R$ 549,00 por R$ 439,20 (20% off), 6 em estoque\n- Violão folk Crafter HT-100 Folk Aço Natural: de R$ 2.399,00 por R$ 1.967,18 (18% off), 3 em estoque\n- Violão Taylor 110e Dreadnought Natural: de R$ 5.999,00 por R$ 5.519,08 (8% off), 4 em estoque\n\nQuer que eu calcule o PIX ou as parcelas de algum deles?"
+ },
+ "usage": {
+  "prompt_tokens": 2752,
+  "completion_tokens": 194,
+  "total_tokens": 2946,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 960
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1880
+}

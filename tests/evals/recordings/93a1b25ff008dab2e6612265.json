@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "No Yamaha C40 de R$ 599,90 dá pra parcelar em até 6x sem juros no cartão: 2x de R$ 299,95, 3x de R$ 199,97, 4x de R$ 149,97, 5x de R$ 119,98 ou 6x de R$ 99,98. No PIX sai por R$ 569,90 com 5% de desconto, e também rola débito ou boleto no valor cheio.\n\nQuer que eu veja as parcelas de outro modelo também?"
+ },
+ "usage": {
+  "prompt_tokens": 2697,
+  "completion_tokens": 131,
+  "total_tokens": 2828,
+  "prompt_tokens_details": {
+   "cached_tokens": 2432
+  },
+  "prompt_cache_hit_tokens": 2432,
+  "prompt_cache_miss_tokens": 265
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1765
+}

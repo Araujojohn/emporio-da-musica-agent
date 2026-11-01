@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Pedro, seu pedido 1 está como entregue. Foi um Violão Martin D-28 Dreadnought Natural, no valor de R$ 11.499,00, pago via PIX, com entrega prevista para 25/10/2025 e código de rastreio BRAB1234567BR. Precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2065,
+  "completion_tokens": 80,
+  "total_tokens": 2145,
+  "prompt_tokens_details": {
+   "cached_tokens": 1920
+  },
+  "prompt_cache_hit_tokens": 1920,
+  "prompt_cache_miss_tokens": 145
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1419
+}

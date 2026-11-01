@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "O ukulele mais em conta do nosso catálogo é o Shelby SU-21S Soprano Sunburst, por R$ 159,90 (R$ 151,91 no PIX, em até 3x sem juros). Ele é soprano, com acabamento Sunburst e som alegre, ótimo pra começar.\n\nLogo depois vem o Kalani KAL-300S Soprano Natural, por R$ 179,90 (R$ 170,91 no PIX).\n\nQuer saber mais de algum deles ou precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 4043,
+  "completion_tokens": 122,
+  "total_tokens": 4165,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 2251
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1539
+}

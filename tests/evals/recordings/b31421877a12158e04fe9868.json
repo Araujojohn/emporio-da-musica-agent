@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_23eQG3kLD7j3Cco3WjP57126",
+    "type": "function",
+    "function": {
+     "name": "search_products",
+     "arguments": "{\"query\": \"Ohana CK-20\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1851,
+  "completion_tokens": 42,
+  "total_tokens": 1893,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 187
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1211
+}

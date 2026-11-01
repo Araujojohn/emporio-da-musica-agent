@@ -163,12 +163,15 @@ class Store:
         result = {"total_found": len(found), "shown": len(cards), "products": cards}
         if not found:
             result["note"] = NOT_IN_CATALOG
-            # Without this the model offered "sax or clarinet", which the store lists as a category but does not stock
-            result["categories_in_stock"] = sorted({self.categories[p["category_id"]] for p in self.products.values()
-                                                    if self.availability(p) == AVAILABLE})
+            result["categories_in_stock"] = self.categories_in_stock()
         elif all(self.availability(p) != AVAILABLE for p in found):
             result["alternatives"] = self._alternatives(found[0])
         return result
+
+    def categories_in_stock(self) -> list[str]:
+        """Without this the model offered "sax or clarinet": the store lists those categories but stocks none."""
+        return sorted({self.categories[p["category_id"]] for p in self.products.values()
+                       if self.availability(p) == AVAILABLE})
 
     def _alternatives(self, product: dict) -> list[dict]:
         """§7.3: an unavailable product comes with similar ones the customer can actually buy."""
@@ -188,6 +191,11 @@ class Store:
         digits = _digits(contact)
         return len(digits) >= MIN_CONTACT_DIGITS and _digits(customer.get("phone", "")).endswith(digits)
 
+    def _order_item(self, item: dict) -> dict:
+        product = self.products[item["product_id"]]
+        # The category stops the model from guessing: without it, a Taylor acoustic was called "guitarra"
+        return {"name": product["name"], "category": self.categories[product["category_id"]], "quantity": item["quantity"]}
+
     def order_details(self, order_id: int) -> dict:
         """Call only after contact_matches. Phone, e-mail and full name never reach the model."""
         order = self.orders[order_id]
@@ -199,8 +207,7 @@ class Store:
             "order_date": order["order_date"],
             "total_brl": float(order["total_brl"]),
             "payment": PAYMENT[order["payment_method"]],
-            "items": [{"name": self.products[i["product_id"]]["name"], "quantity": i["quantity"]}
-                      for i in self.items.get(order_id, [])],
+            "items": [self._order_item(i) for i in self.items.get(order_id, [])],
         }
         if order["tracking_code"]:
             details["tracking_code"] = order["tracking_code"]

@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa notícia, Thiago: a devolução do seu Violão Taylor 110e Dreadnought Natural está dentro do prazo, o limite é 27/03/2026.\n\nCondições: o instrumento precisa estar sem uso, na embalagem original, com todos os acessórios e manuais. O reembolso é pelo mesmo meio de pagamento (crédito em 6x) em até 10 dias úteis, e o frete de retorno é por conta da loja.\n\nSó preciso confirmar com você: o violão não é personalizado, não é item de liquidação final e não é boquilha, certo? Se estiver tudo certo, já encaminho pra equipe abrir o processo."
+ },
+ "usage": {
+  "prompt_tokens": 2421,
+  "completion_tokens": 165,
+  "total_tokens": 2586,
+  "prompt_tokens_details": {
+   "cached_tokens": 2176
+  },
+  "prompt_cache_hit_tokens": 2176,
+  "prompt_cache_miss_tokens": 245
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 2258
+}

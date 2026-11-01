@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_frMuFLXYyn98lz2kNwPT5589",
+    "type": "function",
+    "function": {
+     "name": "get_order",
+     "arguments": "{\"order_id\": 2, \"contact\": \"(67) 98321-6543\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1912,
+  "completion_tokens": 62,
+  "total_tokens": 1974,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 248
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1305
+}

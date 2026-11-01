@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_DP3XGb9wNJ231u0A23Ei8507",
+    "type": "function",
+    "function": {
+     "name": "search_products",
+     "arguments": "{\"query\": \"Kala KA-ABP-CTG\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1858,
+  "completion_tokens": 45,
+  "total_tokens": 1903,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 194
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1276
+}

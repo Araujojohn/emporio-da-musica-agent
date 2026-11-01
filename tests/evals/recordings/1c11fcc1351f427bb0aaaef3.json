@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_Bj1qFhx2jtpDcJ755CYJ7235",
+    "type": "function",
+    "function": {
+     "name": "search_products",
+     "arguments": "{\"query\": \"Gibson Les Paul\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1852,
+  "completion_tokens": 41,
+  "total_tokens": 1893,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 188
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1151
+}

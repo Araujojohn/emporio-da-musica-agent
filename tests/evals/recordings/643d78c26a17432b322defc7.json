@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_iWwhX7T37VVDavxjXr5E6225",
+    "type": "function",
+    "function": {
+     "name": "search_products",
+     "arguments": "{\"category\": \"Guitarras\", \"max_price\": 6000}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 1850,
+  "completion_tokens": 59,
+  "total_tokens": 1909,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 186
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 974
+}

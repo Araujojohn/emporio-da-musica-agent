@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_GAxpjrZ4pCoXayODzTvm6313",
+    "type": "function",
+    "function": {
+     "name": "escalate_to_human",
+     "arguments": "{\"reason\": \"order_change\", \"summary\": \"Cliente Fernanda pede cancelamento do pedido 13 (ukulele Ohana BK-35E, R$ 1.899,00, PIX, status aguardando confirmação).\"}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 2040,
+  "completion_tokens": 102,
+  "total_tokens": 2142,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 248
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1357
+}

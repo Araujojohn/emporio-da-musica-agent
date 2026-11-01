@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Domingo e feriados a loja fica fechada, viu? Nosso horário é de segunda a sexta das 9h às 18h e sábado das 9h às 13h. Hoje é quarta, então estamos abertos até as 18h. Precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2419,
+  "completion_tokens": 75,
+  "total_tokens": 2494,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 627
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1348
+}

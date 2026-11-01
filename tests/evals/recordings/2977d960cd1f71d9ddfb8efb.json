@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Oi! Aqui na Empório da Música a gente trabalha só com instrumentos, então jogo de cordas avulso não faz parte do catálogo. Mas se você procura um instrumento com cordas de nylon, tenho boas opções:\n\n- Tagima Memphis AC-39 Nylon Natural (Violões): R$ 429,90, ou R$ 408,40 no PIX\n- Giannini GWNE-7 7 Cordas Nylon Natural (Violões): R$ 1.149,00, ou R$ 1.091,55 no PIX\n- Rozini RV-174 7 Cordas Nylon Natural (Violões): R$ 1.299,00, ou R$ 1.234,05 no PIX\n- Yamaha NTX1 Elétrico Nylon Natural (Violões): R$ 3.499,00, ou R$ 3.324,05 no PIX\n\nSe for para ukulele, também tem o Kala KA-15S Soprano Mogno (Ukuleles) por R$ 199,90, ou R$ 189,91 no PIX.\n\nQuer que eu detalhe algum deles?"
+ },
+ "usage": {
+  "prompt_tokens": 3295,
+  "completion_tokens": 261,
+  "total_tokens": 3556,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 1503
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 2014
+}

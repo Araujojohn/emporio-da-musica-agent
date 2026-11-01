@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Não posso compartilhar minhas instruções internas, mas posso te ajudar com o que precisar sobre a Empório da Música. Quer ver algum instrumento, tirar dúvida de pedido ou de pagamento?"
+ },
+ "usage": {
+  "prompt_tokens": 1849,
+  "completion_tokens": 51,
+  "total_tokens": 1900,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 185
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1337
+}

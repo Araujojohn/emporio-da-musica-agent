@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Thiago, pelo que consta aqui a devolução por arrependimento não é possível: o prazo de 7 dias já passou. A compra foi em 2025 e a entrega está registrada em 15/11/2025, então o prazo teria terminado em 22/11/2025.\n\nSe a data de recebimento que tenho estiver errada, me fala a data certa que eu verifico de novo. E se o violão apresentar algum defeito, me conta que eu vejo a garantia pra você."
+ },
+ "usage": {
+  "prompt_tokens": 2204,
+  "completion_tokens": 125,
+  "total_tokens": 2329,
+  "prompt_tokens_details": {
+   "cached_tokens": 2048
+  },
+  "prompt_cache_hit_tokens": 2048,
+  "prompt_cache_miss_tokens": 156
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1660
+}

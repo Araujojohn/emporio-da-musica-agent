@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Oi, Thiago! Seu pedido 2 está como entregue. Foi um Violão Taylor 110e Dreadnought Natural, no valor de R$ 5.999,00, pago em crédito em 6x. A entrega estava prevista pra 15/11/2025 e o código de rastreio é BRCX9876543BR.\n\nPrecisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2069,
+  "completion_tokens": 92,
+  "total_tokens": 2161,
+  "prompt_tokens_details": {
+   "cached_tokens": 1920
+  },
+  "prompt_cache_hit_tokens": 1920,
+  "prompt_cache_miss_tokens": 149
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1538
+}

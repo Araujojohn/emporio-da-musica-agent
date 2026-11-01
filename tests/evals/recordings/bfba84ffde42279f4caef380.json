@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa, tem uma opção bem legal dentro do seu orçamento: a **Fender Telecaster Player Series**, guitarra elétrica com 2 captadores Player Series Alnico 5, corpo em alder e braço em maple, na cor Butterscotch Blonde. Tá saindo por R$ 5.400,00, com 15 unidades em estoque.\n\nNo PIX fica R$ 5.130,00, ou dá pra parcelar em até 12x sem juros. Quer que eu calcule as parcelas ou precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2093,
+  "completion_tokens": 128,
+  "total_tokens": 2221,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 301
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1714
+}

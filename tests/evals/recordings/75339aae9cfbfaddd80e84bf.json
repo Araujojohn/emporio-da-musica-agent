@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Tem sim! Duas opções boas pra quem tá começando, as duas com cordas de nylon, que machucam menos os dedos:\n\n- Tagima Memphis AC-39 Nylon Natural: R$ 429,90 (R$ 408,40 no PIX, 5x sem juros), 15 em estoque\n- Rozini RC-104 Nylon Estudante: R$ 459,90 (R$ 436,90 no PIX, 5x sem juros), 10 em estoque\n\nAs duas são tamanho inteiro, com escala de 650mm. Pra uma criança de 8 anos, vale conferir se ela alcança o braço com conforto, porque às vezes um violão menor ajuda no começo. Quer que eu veja se tem modelo menor no catálogo?"
+ },
+ "usage": {
+  "prompt_tokens": 2288,
+  "completion_tokens": 179,
+  "total_tokens": 2467,
+  "prompt_tokens_details": {
+   "cached_tokens": 1920
+  },
+  "prompt_cache_hit_tokens": 1920,
+  "prompt_cache_miss_tokens": 368
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1865
+}

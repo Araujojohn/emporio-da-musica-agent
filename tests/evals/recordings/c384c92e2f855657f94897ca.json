@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Essa eu deixo de lado, só ajudo com a Empório da Música mesmo. Quer que eu te mostre algum instrumento do nosso catálogo?"
+ },
+ "usage": {
+  "prompt_tokens": 1940,
+  "completion_tokens": 36,
+  "total_tokens": 1976,
+  "prompt_tokens_details": {
+   "cached_tokens": 1536
+  },
+  "prompt_cache_hit_tokens": 1536,
+  "prompt_cache_miss_tokens": 404
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1376
+}

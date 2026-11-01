@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "O Crafter HT-100 Folk Aço Natural está saindo por R$ 1.967,18 no preço promocional, 18% de desconto sobre os R$ 2.399,00 originais. É um violão folk com tampo sólido em Spruce Engelmann, e temos 3 unidades em estoque.\n\nQuer que eu calcule o valor no PIX ou as parcelas?"
+ },
+ "usage": {
+  "prompt_tokens": 2129,
+  "completion_tokens": 91,
+  "total_tokens": 2220,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 337
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1415
+}

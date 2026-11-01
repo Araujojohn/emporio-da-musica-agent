@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Pronto! Registrei seu pedido de exclusão de dados com a equipe responsável. O protocolo é EM-18E4A3 e o retorno sai em até 24 horas úteis.\n\nSe quiser agilizar, você também pode falar direto pelo WhatsApp (67) 3341-4444 ou pelo e-mail contato@emporiodamusica.com.br. Precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2604,
+  "completion_tokens": 92,
+  "total_tokens": 2696,
+  "prompt_tokens_details": {
+   "cached_tokens": 2432
+  },
+  "prompt_cache_hit_tokens": 2432,
+  "prompt_cache_miss_tokens": 172
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1488
+}

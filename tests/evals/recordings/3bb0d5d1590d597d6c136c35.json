@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Oi, Ana! Verifiquei aqui: seu pedido 8 é o ukulele Kala KA-C Concert Mogno, foi enviado e a previsão de entrega era 28/02. Ou seja, está atrasado, e sinto muito por isso.\n\nJá encaminhei para a nossa equipe acompanhar o caso com você. O protocolo é EM-1FFD56 e o retorno acontece em até 24 horas úteis. O código de rastreio é BRJL5544332BR, caso queira acompanhar.\n\nPrecisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2229,
+  "completion_tokens": 130,
+  "total_tokens": 2359,
+  "prompt_tokens_details": {
+   "cached_tokens": 2048
+  },
+  "prompt_cache_hit_tokens": 2048,
+  "prompt_cache_miss_tokens": 181
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1606
+}

@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Não, queda não é coberta. A garantia não cobre danos por mau uso, queda, exposição a condições climáticas extremas, modificações ou reparos feitos por terceiros não autorizados, nem desgaste natural de peças como trastes e cordas.\n\nSe o instrumento chegou com defeito de fabricação, a troca pode ser feita em até 30 dias corridos após a compra. Depois disso, o caminho é acionar a garantia com o fabricante, e a loja pode intermediar se você pedir.\n\nPrecisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2197,
+  "completion_tokens": 134,
+  "total_tokens": 2331,
+  "prompt_tokens_details": {
+   "cached_tokens": 1792
+  },
+  "prompt_cache_hit_tokens": 1792,
+  "prompt_cache_miss_tokens": 405
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1409
+}

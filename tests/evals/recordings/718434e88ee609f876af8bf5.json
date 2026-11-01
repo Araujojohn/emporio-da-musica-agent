@@ -1,0 +1,18 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Oi, Fernanda! Confirmei seu pedido 13, o ukulele Ohana BK-35E Barítono Elétrico Natural, de R$ 1.899,00 no PIX, que está aguardando confirmação. Como cancelamento é feito pela nossa equipe, já encaminhei seu pedido de cancelamento. O protocolo é EM-280806 e o retorno sai em até 24 horas úteis. Precisa de mais alguma coisa?"
+ },
+ "usage": {
+  "prompt_tokens": 2177,
+  "completion_tokens": 107,
+  "total_tokens": 2284,
+  "prompt_tokens_details": {
+   "cached_tokens": 1920
+  },
+  "prompt_cache_hit_tokens": 1920,
+  "prompt_cache_miss_tokens": 257
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1431
+}

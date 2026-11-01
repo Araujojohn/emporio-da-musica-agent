@@ -1,0 +1,29 @@
+{
+ "message": {
+  "role": "assistant",
+  "content": "Boa escolha, nylon é ótimo pra começar: corda mais macia, dói menos nos dedos. Deixa eu confirmar os dados atuais no catálogo.",
+  "tool_calls": [
+   {
+    "index": 0,
+    "id": "call_00_E28iBGDh7Yc4txszQbSF3068",
+    "type": "function",
+    "function": {
+     "name": "search_products",
+     "arguments": "{\"query\": \"violão nylon\", \"category\": \"Violões\", \"max_price\": 1000}"
+    }
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 2266,
+  "completion_tokens": 115,
+  "total_tokens": 2381,
+  "prompt_tokens_details": {
+   "cached_tokens": 1664
+  },
+  "prompt_cache_hit_tokens": 1664,
+  "prompt_cache_miss_tokens": 602
+ },
+ "model": "deepseek-flash",
+ "latency_ms": 1873
+}
